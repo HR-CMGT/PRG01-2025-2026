@@ -2,6 +2,8 @@
 
 Deze repository bevat alle informatie voor de cursus Programming Basis a.k.a. PRG01.
 
+De repository is bedoeld als lesmateriaal en naslaginformatie voor de studenten.
+
 Het is een cursus waarin de studenten leren programmeren in JavaScript, waarbij we gebruik maken van de Circuit
 Playground Express (CPX) en de Adafruit Makecode omgeving.
 
@@ -39,3 +41,8 @@ pseudocode om een oplossing te bedenken voor je deze implementeert.
 6. Oefentoets
 7. Arrays en for-of-loops
 8. Herhaling / Miniproject
+
+## Programmeerconventies
+
+- Variabelen declareren we altijd globaal, en bovenaan de code.
+- Variabelen en functienamen zijn altijd in het Engels en lowerCamelCase.

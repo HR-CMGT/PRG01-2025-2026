@@ -1,5 +1,10 @@
 # Programming Basics
 
+Tijdens deze cursus leer je de basisprincipes van programmeren. We gebruiken daarvoor de Circuit Playground Express,
+een development bord dat programmeerbaar is in JavaScript.
+
+## Toetsing
+
 ## Lessen
 
 | Les   | Inhoud                                                                                            |                          |
