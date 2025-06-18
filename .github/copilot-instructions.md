@@ -48,3 +48,16 @@ pseudocode om een oplossing te bedenken voor je deze implementeert.
 
 - Variabelen declareren we altijd globaal, en bovenaan de code.
 - Variabelen en functienamen zijn altijd in het Engels en lowerCamelCase.
+
+## Lesopbouw
+
+Bij de lessen is het belangrijk dat:
+
+- Nieuwe onderwerpen eerst geoefend worden met eenvoudige opdrachten waar zo min mogelijk andere technnieken in
+  gebruikt worden
+- Eerdere onderwerpen steeds terugkomen in de opdrachten
+- De opbouw van de opdrachten elke les twee keer van eenvoudig naar complex loopt:
+  - Eerst in de opdrachten die horen bij de nieuwe theorie
+  - Daarna nog een keer bij de opdrachten aan het eind van de les, na oefenen met de nieuwe theorie
+- Er aandacht is voor het lezen en begrijpen van code
+- Er veel aandacht is voor het denkproces, het nadenken over programmeren.
