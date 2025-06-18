@@ -11,6 +11,8 @@ De Makecode-omgeving gebruikt TypeScript, maar we vermijden het gebruik van type
 mogelijk bij JavaScript te blijven. Gebruik alleen type declaraties bij functieparameters of wanneer het niet mogelijk
 is het type te laten afleiden, zoals bij het aanmaken van een lege array.
 
+We gebruiken bij deze cursus de veilige vergelijkingsoperatoren `===` en `!==`.
+
 ## Uitgangspunten
 
 Omdat dit een basiscursus is, is het belangrijk dat de student programmeerconcepten leert begrijpen en gebruiken. Het
