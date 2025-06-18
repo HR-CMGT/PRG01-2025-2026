@@ -41,13 +41,14 @@ pseudocode om een oplossing te bedenken voor je deze implementeert.
 4. For-loops en patroonherkenning
 5. Functies met parameters en probleemoplossend denken (case)
 6. Oefentoets
-7. Arrays en for-of-loops
+7. Arrays
 8. Herhaling / Miniproject
 
 ## Programmeerconventies
 
 - Variabelen declareren we altijd globaal, en bovenaan de code.
 - Variabelen en functienamen zijn altijd in het Engels en lowerCamelCase.
+- We gebruiken waar mogelijk string templates, in plaats van string-concatination.
 
 ## Lesopbouw
 
