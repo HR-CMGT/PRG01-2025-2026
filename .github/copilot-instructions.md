@@ -28,7 +28,7 @@ pseudocode om een oplossing te bedenken voor je deze implementeert.
   - Functies met en zonder parameters
   - For-loops
   - If statements
-  - Arrays en for-of
+  - Arrays
 - Ik kan voor een probleem een gestructureerde oplossing bedenken.
 - Ik kan met de basiselementen van programmeren een gestructureerde oplossing implementeren.
 - Ik kan een bestaande oplossing die deze basiselementen gebruikt analyseren en uitleggen.
