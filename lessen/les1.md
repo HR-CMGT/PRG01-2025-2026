@@ -8,6 +8,8 @@
 - on start, forever, en event-handlers
 - Kleurdefinities
 
+<!-- Waarschijnlijk beter om on start niet te benoemen -->
+
 <!--
 
 - Kennismaken met de programmeeromgeving
@@ -74,7 +76,8 @@ https://makecode.adafruit.com/
 ### De code moet 1x worden uitgevoerd
 
 Soms wil je dat bepaalde code maar één keer wordt uitgevoerd, bijvoorbeeld om iets klaar te zetten of een beginwaarde
-te geven. Dit de standaard voor code.
+te geven. Dit de standaard voor code die je in een JavaScript programma zet, dus daar hoef je niks bijzonders voor te
+doen.
 
 **Voorbeeld:**
 
@@ -87,8 +90,8 @@ light.setAll(Colors.Red);
 
 <!-- In les light.setPixelColor en kleuren uitleggen -->
 
-_Met `//` geef je aan dat de computer deze regel over moet slaan. Je gebruikt dit om uitleg (bij programmeren noemen we
-dit 'commentaar') toe te voegen aan je programma._
+_Met `//` geef je aan dat de computer alles wat daarna komt op die regel over moet slaan. Je gebruikt dit om uitleg
+(bij programmeren noemen we dit 'commentaar') toe te voegen aan je programma._
 
 #### Opdracht
 
@@ -122,7 +125,8 @@ forever(function () {
 ### De code moet uitgevoerd worden als er iets gebeurt (event)
 
 Soms wil je dat code alleen wordt uitgevoerd als er iets gebeurt, bijvoorbeeld als je op een knop drukt. Hiervoor
-gebruik je een event-handlers. De syntax hiervan is best lastig, dus het is het makkelijkst om deze code te 'slepen'.
+gebruik je een **event-handler**. De syntax hiervan is best lastig, dus het is het makkelijkst om deze code te
+'slepen'.
 
 **Voorbeeld:**
 
@@ -151,6 +155,7 @@ Schrijf bij programmeeropdrachten steeds eerst pseudocode, en daarna de echte co
   tegen elkaar om te zien wie de slimste pseudocode heeft
 - De halve ring knippert, de andere helft zet je aan en uit met knop A en B
 - Reactiespel?
+<!-- TODO: Ga ik hier misschien weer te hard voor les 1? -->
 
 ## Links
 

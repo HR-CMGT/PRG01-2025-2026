@@ -1,3 +1,19 @@
+<!--
+
+TODO:
+
+- slides doornemen en opdrachten daaruit toevoegen
+- nadenken over terminologie: patronen / probleemoplossend denken
+- brightspace opdrachten ook hier, of alleen in slides?
+- opletten dat er voldoende herhaling in de opdrachten zit
+- opletten dat de opbouw in moeilijkheidsgraad klopt
+- co-pilot instructies aanvullen als cursus klaar is
+- functies terug laten komen in les 3 en 4
+- meer over debugging toevoegen
+- scheiding lesopdrachten en zelfstudie in elke les
+
+-->
+
 # Programming Basics
 
 Tijdens deze cursus leer je de basisprincipes van programmeren. We gebruiken daarvoor de Circuit Playground Express,

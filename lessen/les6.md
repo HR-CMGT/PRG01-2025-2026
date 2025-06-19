@@ -2,14 +2,11 @@
 
 ## Onderwerpen
 
-- Herhaling van de voorgaande lessen
-- Toets je kennis
+- Oefentoets
 
-## Leerdoelen
+<!--
 
-- Toepassen van alle basisconcepten
+- Toepassen van alle basisconcepten in oefentoets
+- Bespreken in de les
 
-## Opdrachten
-
-- Maak de oefentoets
-- Bespreek de antwoorden klassikaal
+-->

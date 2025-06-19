@@ -3,14 +3,449 @@
 ## Onderwerpen
 
 - Functies met parameters
-- Probleemoplossend denken (case)
+- Probleemoplossend denken (mini-case)
 
-## Leerdoelen
+<!--
 
 - Functies schrijven die input ontvangen
 - Een probleem analyseren en oplossen met code
 
+-->
+
+## Functies met parameters
+
+In les 2 hebben we functies gemaakt om code te groeperen. Dit waren functies waarbij niets tussen de haakjes stond,
+zoals `allLedsRed()`. Op de CPX hebben we dit soort functies ook gezoen, zoals `light.clear()`. Soms wil je een functie
+informatie meegeven. Dit doe je met **parameters** die je tussen de haakjes zet. De functie kan deze waarde dan
+gebruiken. Op de CPX hebben we dit bijvoorbeeld gezien met `pause(2000)` waarbij je tussen haakjes zet hoeveel
+milliseconden je wil pauzeren.
+
+### Eenvoudig voorbeeld
+
+```typescript
+function sayHello(name: string) {
+  console.log(`Hello, ${name}!`);
+}
+
+// Functie aanroepen met verschillende waarden
+sayHello("Alex"); // Hello, Alex!
+sayHello("Sarah"); // Hello, Sarah!
+```
+
+De waarde die je meegeeft (`"Alex"` of `"Sarah"`) noem je een **argument**. Dit wordt toegewezen aan de parameter
+`name`.
+
+### Functie met meerdere parameters
+
+```typescript
+let studentName = "Tom";
+let studentAge = 16;
+
+function showMessage(name: string, age: number) {
+  console.log(`${name} is ${age} years old`);
+}
+
+showMessage(studentName, studentAge); // Tom is 16 years old
+showMessage("Lisa", 17); // Lisa is 17 years old
+```
+
+### Datatypes
+
+Je ziet dat we bij elke parameter het **datatype** aangeven:
+
+- `string` voor tekst
+- `number` voor getallen
+- `boolean` voor true/false
+
+In gewoon JavaScript doe je dit niet. Wij moeten dit wel doen, omdat de CPX eigenlijk met TypeScript werkt.
+
+<!-- TODO: JS voorbeeld toevoegen? -->
+
+#### Opdracht
+
+- Maak een variabele `playerName` met jouw naam
+- Maak een variabele `playerScore` met waarde 85
+- Schrijf een functie `showScore` die een naam (string) en score (number) als parameters heeft
+- De functie toont: `"Alex heeft 85 punten"`
+- Test de functie met je globale variabelen en met andere waarden
+
+### LED op bepaalde positie aanzetten
+
+```typescript
+function turnOnLed(position: number, color: number) {
+  light.setPixelColor(position, color);
+}
+
+// Gebruik van de functie
+turnOnLed(0, Colors.Red); // LED 0 wordt rood
+turnOnLed(5, Colors.Blue); // LED 5 wordt blauw
+turnOnLed(9, Colors.Green); // LED 9 wordt groen
+```
+
+### LED laten knipperen
+
+```typescript
+function blinkLed(position: number, color: number) {
+  light.setPixelColor(position, color);
+  pause(200);
+  light.setPixelColor(position, Colors.Black);
+  pause(200);
+}
+
+// LED 3 laten knipperen in rood
+blinkLed(3, Colors.Red);
+```
+
+#### Opdracht
+
+- Schrijf een functie `setLedColor` die een positie en kleur als parameters heeft
+- Test de functie door verschillende LED's verschillende kleuren te geven
+- Schrijf een functie `blinkTwice` die een LED twee keer laat knipperen
+- Test beide functies met verschillende posities en kleuren
+
+## Functies met for-loops combineren
+
+Je kunt parameters gebruiken in for-loops om flexibele functies te maken.
+
+### Meerdere LED's aansturen
+
+```typescript
+function lightUpRange(startPos: number, endPos: number, color: number) {
+  for (let i = startPos; i <= endPos; i++) {
+    light.setPixelColor(i, color);
+  }
+}
+
+// LED's 2 tot 5 worden geel
+lightUpRange(2, 5, Colors.Yellow);
+```
+
+### LED patroon met snelheid
+
+```typescript
+let patternColor = Colors.Blue;
+let patternSpeed = 100;
+
+function showPattern(color: number, speed: number) {
+  for (let i = 0; i < 10; i++) {
+    light.setPixelColor(i, color);
+    pause(speed);
+  }
+}
+
+// Gebruik met globale variabelen
+showPattern(patternColor, patternSpeed);
+// Of met directe waarden
+showPattern(Colors.Red, 500);
+```
+
+#### Opdracht
+
+- Maak globale variabelen `startNumber` (waarde 5) en `ledColor` (waarde Colors.Green)
+- Schrijf een functie `countdown` die een startgetal als parameter heeft
+- De functie telt af van dat getal naar 0 en toont elk getal met console.log
+- Schrijf een functie `lightShow` die een kleur en aantal herhalingen als parameters heeft
+- De functie laat alle LED's het opgegeven aantal keer oplichten in die kleur
+- Test beide functies met je globale variabelen
+
+#### Opdracht
+
+```typescript
+let alarmActive = false;
+
+function setAlarm(isActive: boolean) {
+  alarmActive = isActive;
+  if (alarmActive === true) {
+    light.setAll(Colors.Red);
+    music.playTone(800, 500);
+  } else {
+    light.clear();
+  }
+}
+```
+
+- Wat doet de variabele `alarmActive`?
+- Wat gebeurt er als je `setAlarm(true)` aanroept?
+- Wat gebeurt er als je `setAlarm(false)` aanroept?
+- Waarom gebruikt de functie `===` in plaats van `=`?
+
+#### Opdracht
+
+```typescript
+let currentLed = 0;
+
+function moveLed(direction: number) {
+  light.setPixelColor(currentLed, Colors.Black);
+  currentLed = currentLed + direction;
+  if (currentLed >= 10) {
+    currentLed = 0;
+  }
+  if (currentLed < 0) {
+    currentLed = 9;
+  }
+  light.setPixelColor(currentLed, Colors.Green);
+}
+```
+
+- Wat doet deze code als je `moveLed(1)` aanroept?
+- Wat doet deze code als je `moveLed(-1)` aanroept?
+- Waarom zijn er twee if-statements?
+- Wat is het doel van de globale variabele `currentLed`?
+
+## Probleemoplossend denken
+
+Als problemen groter worden, wordt het steeds lastiger om meteen met code te beginnen. Vandaar dat we vaak geoefend
+hebben met pseudocode en vorige les programmeerpatronen bekeken hebben.
+
+### Stappenplan
+
+1. **Probleem analyseren**: Wat moet er precies gebeuren?
+2. **Patronen herkennen**: Welke programmeertechnieken heb je nodig?
+3. **Pseudocode schrijven**: Plan je oplossing in gewone taal
+4. **Functies identificeren**: Welke taken kun je in functies onderverdelen?
+5. **Code implementeren**: Vertaal je plan naar echte code
+6. **Testen**: Controleer of alles werkt zoals verwacht
+
+<!-- TODO: stappen namen geven zoals nu, of alleen de beschrijving van de stap? Functies identificeren door AI toegevoegd, erin laten? (is op zich wel handig als je begint met programmeren, en past goed bij de les) -->
+
+### Patronen
+
+| Probleem                                      | Oplossing                  |
+| --------------------------------------------- | -------------------------- |
+| Iets onthouden voor later                     | **Globale variabele**      |
+| Rekenen of dingen veranderen                  | **Operatoren**             |
+| Keuzes maken                                  | **If-statement**           |
+| Iets meerdere keren (ongeveer) hetzelfde doen | **For-loop**               |
+| Iets continu blijven herhalen                 | **Forever-loop**           |
+| Reageren op (gebruikers)input                 | **Event handler**          |
+| Gebruiken van input of output                 | **CPX functie**            |
+| Hetzelfde doen op verschillende momenten      | **Functie**                |
+| Hetzelfde doen met verschillende waarden      | **Functie met parameters** |
+
+### Voorbeeld: Verkeerslicht simulator
+
+**Probleem**: Maak een verkeerslicht dat rood, oranje en groen toont.
+
+**Stap 1 - Analyseren**:
+
+- 3 LED's gebruiken (bijvoorbeeld positie 0, 1, 2)
+- Rood → Oranje → Groen → herhalen
+- Elke kleur moet even blijven staan
+
+**Stap 2 - Patronen herkennen**:
+
+- Waarden onthouden voor LED posities → **variabelen**
+- Continu herhalen → **Forever loop**
+- Dezelfde actie (LED aanzetten) met verschillende waarden → **Functie met parameters**
+- LED aansturen → **CPX functie**
+
+**Stap 3 - Pseudocode**:
+
+```
+variabelen:
+    - redPosition = 0
+    - orangePosition = 1
+    - greenPosition = 2
+
+functie showTrafficLight:
+    - parameter: kleur, positie, tijd
+    - alle LED's uit
+    - zet LED op positie aan in kleur
+    - wacht opgegeven tijd
+
+hoofdprogramma:
+    - herhaal voor altijd:
+        - showTrafficLight rood, redPosition, 2 seconden
+        - showTrafficLight oranje, orangePosition, 1 seconde
+        - showTrafficLight groen, greenPosition, 2 seconden
+```
+
+**Stap 4 - Functies identificeren**:
+
+- `showTrafficLight(color, position, duration)` - voor elke kleur
+
+**Stap 5 - Implementeren**:
+
+```typescript
+let redPosition = 0;
+let orangePosition = 1;
+let greenPosition = 2;
+
+function showTrafficLight(color: number, position: number, duration: number) {
+  light.clear();
+  light.setPixelColor(position, color);
+  pause(duration);
+}
+
+forever(function () {
+  showTrafficLight(Colors.Red, redPosition, 2000);
+  showTrafficLight(Colors.Orange, orangePosition, 1000);
+  showTrafficLight(Colors.Green, greenPosition, 2000);
+});
+```
+
+**Stap 6 - Testen**:
+
+- Controle of de juiste LED's aangaan
+- Controle of de timing klopt
+- Testen of het blijft herhalen
+
+#### Opdracht: Patronen herkennen
+
+Analyseer deze problemen en identificeer welke patronen je nodig hebt:
+
+1. "Maak een digitale dobbelsteen die een willekeurig getal van 1-6 toont als LED's wanneer je schudt"
+
+   - Welke patronen herken je?
+   - Schrijf pseudocode
+
+2. "Tel hoeveel keer knop A is ingedrukt en toon dit met LED's"
+
+   - Welke patronen herken je?
+   - Schrijf pseudocode
+
+3. "Laat een LED rondjes maken, sneller als de temperatuur hoger is"
+   - Welke patronen herken je?
+   - Schrijf pseudocode
+
+## Mini-case: Alarmsysteem
+
+**Probleem**: Maak een alarmsysteem, dat reageert op beweging. Wanneer je op knop A drukt, gaat het alarm aan (rode
+LED's + geluid). Wanneer je op knop B drukt, gaat het alarm uit.
+
+### Stap 1: Analyseer het probleem
+
+- Wat moet er gebeuren bij knop A?
+- Wat moet er gebeuren bij knop B?
+- Welke input en output heb je?
+- Wanneer gaat het alarm af?
+
+### Stap 2: Patronen herkennen
+
+- Welke programmeertechnieken heb je nodig volgens de patronentabel?
+- Moet je iets onthouden over de status van het alarm?
+- Hoe reageer je op de knoppen?
+
+### Stap 3: Schrijf pseudocode
+
+```
+variabelen:
+    - ...
+
+functie setAlarm:
+    - parameter: ...
+    - ...
+
+event handlers:
+    - ...
+```
+
+### Stap 4: Functies identificeren
+
+- Welke functies ga je maken?
+- Welke parameters hebben ze nodig?
+
+### Stap 5: Implementeer je oplossing
+
+Gebruik functies met parameters waar mogelijk.
+
+### Stap 6: Test je oplossing
+
+- Test of knop A het alarm aanzet
+- Test of knop B het alarm uitzet
+- Test of het alarm blijft werken na meerdere keren aan/uit
+
 ## Opdrachten
 
-- Schrijf een functie die een LED op een bepaalde positie aanzet
-- Los een kleine case op met meerdere functies
+### Opdracht 1: Basis functies met parameters
+
+- Maak globale variabelen: `firstName` (jouw voornaam), `className` (jouw klas), `number1` (waarde 12), `number2`
+  (waarde 8)
+- Schrijf een functie `greetStudent` die een naam en klas als parameters heeft
+- De functie toont: `"Hallo Alex uit klas 1A"`
+- Schrijf een functie `calculateSum` die twee getallen als parameters heeft
+- Deze functie toont de som van beide getallen met een template string
+- Test beide functies met je globale variabelen
+
+### Opdracht 2: LED patronen
+
+- Maak globale variabelen: `favoriteColor` (een kleur), `blinkCount` (waarde 3)
+- Schrijf een functie `fillLeds` die een kleur als parameter heeft
+- De functie zet alle LED's op die kleur
+- Schrijf een functie `blinkPattern` die een kleur en aantal keren als parameters heeft
+- Deze functie laat alle LED's het opgegeven aantal keer knipperen
+- Test met je globale variabelen en andere waarden
+
+### Opdracht 3: Geluid en licht
+
+- Maak globale variabelen voor verschillende toonhoogtes
+- Schrijf een functie `ledAndSound` die een LED-positie, kleur en toonhoogte als parameters heeft
+- De functie zet de LED aan en speelt tegelijk een toon af
+- Schrijf een functie `playSequence` die 3 verschillende LED's na elkaar laat oplichten
+- Elke LED heeft een andere kleur en speelt een andere toon
+- Test je functies met verschillende combinaties
+
+### Opdracht 4: Code lezen
+
+Bekijk deze code en beantwoord de vragen:
+
+```typescript
+let gameScore = 0;
+let bonusPoints = 10;
+
+function addScore(points: number) {
+  gameScore = gameScore + points;
+  console.log(`Score is now: ${gameScore}`);
+}
+
+function checkBonus() {
+  if (gameScore >= 50) {
+    addScore(bonusPoints);
+    console.log("Bonus earned!");
+  }
+}
+```
+
+Vragen:
+
+- Wat doet de functie `addScore`?
+- Wanneer krijg je bonus punten?
+- Wat gebeurt er als je `checkBonus()` aanroept terwijl `gameScore` 45 is?
+- Wat gebeurt er als je `checkBonus()` aanroept terwijl `gameScore` 60 is?
+
+### Opdracht 5: Mini-case uitwerken
+
+Kies één van deze problemen en werk het volledig uit volgens de 5 stappen:
+
+1. **Reactiespel**: Laat een willekeurige LED oplichten, speler moet de juiste knop indrukken binnen 3 seconden
+2. **Muziekinstrument**: Verschillende knoppen/sensoren spelen verschillende noten af
+3. **Temperatuurmeter**: Toon met LED-kleuren hoe warm het is (blauw=koud, groen=normaal, rood=warm)
+
+Voor elk probleem:
+
+- Schrijf eerst pseudocode
+- Identificeer alle benodigde globale variabelen en functies
+- Implementeer stap voor stap
+- Test je oplossing uitgebreid
+
+## Patroonherkenning samenvatting
+
+Je hebt nu alle basispatronen geleerd. Bij elk probleem kun je deze checklist gebruiken:
+
+### Checklist voor probleemoplossing
+
+1. **Analyseer eerst**: Wat moet er gebeuren?
+2. **Herken patronen**: Welke technieken heb je nodig?
+   - Moet ik iets onthouden? → **Globale variabele**
+   - Moet ik een keuze maken? → **If-statement**
+   - Moet ik iets herhalen? → **For-loop** of **Forever**
+   - Moet ik reageren op input? → **Event handler**
+   - Moet ik dezelfde actie met verschillende waarden? → **Functie met parameters**
+   - Is de taak complex? → **Meerdere functies**
+3. **Schrijf pseudocode**
+4. **Implementeer stap voor stap**
+5. **Test grondig**
+
+Deze aanpak wordt steeds belangrijker naarmate de problemen complexer worden!
+
+<!-- TODO: laatste opdrachten nalezen -->
