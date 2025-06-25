@@ -6,6 +6,9 @@
 - Vergelijkingen
 - If-statements
 
+<!-- TODO: Boolean direct in if-statement -->
+<!-- TODO: NOT ! -->
+
 <!--
 
 - Logische vergelijkingen maken
@@ -18,25 +21,22 @@
 **Operatoren** zijn symbolen waarmee je bewerkingen (vaak berekeningen) kunt doen of waarden kunt vergelijken. Je kent
 ze al van wiskunde, zoals `+` en `-`. In programmeren gebruiken we dezelfde symbolen, maar er zijn er nog meer.
 
+<!-- TODO: Nog een modulus opdrachtje toevoegen -->
+<!-- TODO: Math.round/floor/ceil en random toevoegen -->
+
 ### Rekenoperatoren
 
 Met rekenoperatoren kun je wiskundige berekeningen uitvoeren:
 
-| Operator | Betekenis        | Voorbeeld | Resultaat |
-| -------- | ---------------- | --------- | --------- |
-| `+`      | Optellen         | `5 + 3`   | `8`       |
-| `-`      | Aftrekken        | `10 - 4`  | `6`       |
-| `*`      | Vermenigvuldigen | `6 * 2`   | `12`      |
-| `/`      | Delen            | `15 / 3`  | `5`       |
-
-De `+` operator kun je ook gebruiken om strings (tekst) samen te voegen:
-
-```typescript
-let firstName = "Alex";
-let lastName = "Smith";
-let fullName = firstName + " " + lastName; // "Alex Smith"
-console.log(fullName);
-```
+| Operator | Betekenis                 | Voorbeeld | Resultaat  |
+| -------- | ------------------------- | --------- | ---------- |
+| `+`      | Optellen                  | `5 + 3`   | `8`        |
+| `-`      | Aftrekken                 | `10 - 4`  | `6`        |
+| `*`      | Vermenigvuldigen          | `6 * 2`   | `12`       |
+| `/`      | Delen                     | `15 / 3`  | `5`        |
+|          |                           | `16 / 3`  | `5.333...` |
+| `%`      | Modulus (rest bij deling) | `15 % 3`  | `0`        |
+|          |                           | `16 % 3`  | `1`        |
 
 Je kunt deze operatoren gebruiken met getallen en variabelen:
 
@@ -147,3 +147,19 @@ if (score >= 80) {
 - Toggle led
 - Gebruik een if-statement om een LED aan of uit te zetten
 - Rekenopdrachtjes met tekst
+
+## Bouwstenen
+
+| Probleem                                 | Oplossing             |
+| ---------------------------------------- | --------------------- |
+| Iets onthouden voor later                | **Globale variabele** |
+| Vaste waarden                            | **Constanten**        |
+| Rekenen of dingen veranderen             | **Operatoren**        |
+| Keuzes maken                             | **If-statement**      |
+| Iets één keer doen                       | **Losse code**        |
+| Iets continu blijven herhalen            | **Forever-loop**      |
+| Reageren op (gebruikers)input            | **Event handler**     |
+| Gebruiken van input of output            | **CPX functie**       |
+| Hetzelfde doen op verschillende momenten | **Functie**           |
+
+<!-- TODO: Opdrachten toevoegen -->

@@ -18,7 +18,7 @@ We gebruiken bij deze cursus de veilige vergelijkingsoperatoren `===` en `!==`.
 Omdat dit een basiscursus is, is het belangrijk dat de student programmeerconcepten leert begrijpen en gebruiken. Het
 is daarom niet toegestaan om generatieve AI te gebruiken voor het genereren van code. Alle code moet door de student
 zelf geschreven en begrepen worden. Er is veel aandacht voor het leren lezen en uitleggen van code, en het gebruik van
-pseudocode om een oplossing te bedenken voor je deze implementeert.
+pseudocode om een plan maken voor je een oplossing implementeert.
 
 ## De leerdoelen zijn:
 
@@ -38,8 +38,8 @@ pseudocode om een oplossing te bedenken voor je deze implementeert.
 1. Introductie. Programmastructuur, input/output en pseudocode, on start, forever, en event-handlers
 2. Variabelen en zelf gedefinieerde functies zonder parameters
 3. Operatoren, vergelijkingen en if-statements
-4. For-loops en patroonherkenning
-5. Functies met parameters en probleemoplossend denken (case)
+4. For-loops
+5. Functies met parameters (case)
 6. Oefentoets
 7. Arrays
 8. Herhaling / Miniproject
@@ -48,7 +48,7 @@ pseudocode om een oplossing te bedenken voor je deze implementeert.
 
 - Variabelen declareren we altijd globaal, en bovenaan de code.
 - Variabelen en functienamen zijn altijd in het Engels en lowerCamelCase.
-- We gebruiken waar mogelijk string templates, in plaats van string-concatination.
+- We gebruiken enkel string templates om variabelen en tekst samen te voegen, nooit string-concatination.
 
 ## Lesopbouw
 
@@ -61,4 +61,5 @@ Bij de lessen is het belangrijk dat:
   - Eerst in de opdrachten die horen bij de nieuwe theorie
   - Daarna nog een keer bij de opdrachten aan het eind van de les, na oefenen met de nieuwe theorie
 - Er aandacht is voor het lezen en begrijpen van code
-- Er veel aandacht is voor het denkproces, het nadenken over programmeren.
+- Er veel aandacht is voor het denkproces, het nadenken over programmeren aan de hand van een stappenplan en bouwstenen
+  van een programma.

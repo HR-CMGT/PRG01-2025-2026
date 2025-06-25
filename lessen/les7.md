@@ -186,18 +186,27 @@ showRainbow(rainbowColors);
 - Schrijf een functie `lightUpLeds` die een array van LED-posities ontvangt
 - Alle LED's op die posities worden groen
 
-## Patroonherkenning met arrays
+## Bouwstenen
 
-Arrays passen goed bij de patronen die je al kent:
+| Probleem                                      | Oplossing                     |
+| --------------------------------------------- | ----------------------------- |
+| Iets onthouden voor later                     | **Globale variabele**         |
+| Vaste waarden                                 | **Constanten**                |
+| Rekenen of dingen veranderen                  | **Operatoren**                |
+| Keuzes maken                                  | **If-statement**              |
+| Iets één keer doen                            | **Losse code**                |
+| Iets meerdere keren (ongeveer) hetzelfde doen | **For-loop**                  |
+| Iets continu blijven herhalen                 | **Forever-loop**              |
+| Reageren op (gebruikers)input                 | **Event handler**             |
+| Gebruiken van input of output                 | **CPX functie**               |
+| Hetzelfde doen op verschillende momenten      | **Functie**                   |
+| Hetzelfde doen met verschillende waarden      | **Functie met parameters**    |
+| Meerdere vergelijkbare waarden opslaan        | **Array**                     |
+| Door alle waarden in een lijst gaan           | **For-loop met array.length** |
 
-| Probleem                               | Oplossing                     |
-| -------------------------------------- | ----------------------------- |
-| Meerdere vergelijkbare waarden opslaan | **Array**                     |
-| Door alle waarden in een lijst gaan    | **For-loop met array.length** |
+#### Opdracht
 
-#### Opdracht: Patroonherkenning
-
-Voor elk probleem, identificeer welke patronen je nodig hebt:
+Voor elk probleem, identificeer welke bouwstenen je nodig hebt:
 
 1. "Bewaar de scores van 5 spelers en toon de hoogste score"
 2. "Speel een lijst van noten af als melodie"

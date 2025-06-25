@@ -1,20 +1,18 @@
-# Les 4: For-loops en Patroonherkenning
+# Les 4: For-loops
 
 ## Onderwerpen
 
 - For-loops
-- Patroonherkenning
 
 <!--
 - Herhaling in code toepassen
-- Patronen herkennen en programmeren
 
-Met patronen herkennen wordt bij deze cursus bedoeld dat je begrijpt wanneer een bepaalde techniek (variabele, if statement, loop etc) gebruikt moet worden -->
+ -->
 
 ## For-loops
 
 Soms wil je een stukje code meerdere keren uitvoeren. In plaats van dezelfde code telkens opnieuw te schrijven (daar
-houden programmeurs niet van) kun je een **for-loop** gebruiken. Een for-loop herhaalt code een bepaald aantal keren.
+houden programmeurs niet van) kan je een **for-loop** gebruiken. Een for-loop herhaalt code een bepaald aantal keren.
 
 De basis structuur van een for-loop is:
 
@@ -23,8 +21,6 @@ for (let i = 0; i < numberOfRepeats; i++) {
   // code die wordt herhaald
 }
 ```
-
-Uitleg van de onderdelen:
 
 - `let i = 0`: Start met variabele `i` op waarde 0
 - `i < aantal`: Herhaal zolang `i` kleiner is dan het numberOfRepeats
@@ -93,36 +89,22 @@ for (let i = 0; i < 10; i++) {
 - Maak een for-loop die de LED's één voor één rood laat oplichten met een pauze van 300 milliseconden
 - Maak een for-loop die de eerste 5 LED's blauw maakt
 
-## Patroonherkenning
-
-Met **Patroonherkenning** bedoelen we dat je leert herkennen wanneer je een bepaalde programmeertechniek moet
-gebruiken. Dit is een belangrijke vaardigheid in programmeren.
-
-### Wanneer gebruik je wat?
+### Bouwstenen
 
 | Probleem                                      | Oplossing             |
 | --------------------------------------------- | --------------------- |
 | Iets onthouden voor later                     | **Globale variabele** |
+| Vaste waarden                                 | **Constanten**        |
 | Rekenen of dingen veranderen                  | **Operatoren**        |
 | Keuzes maken                                  | **If-statement**      |
+| Iets één keer doen                            | **Losse code**        |
 | Iets meerdere keren (ongeveer) hetzelfde doen | **For-loop**          |
 | Iets continu blijven herhalen                 | **Forever-loop**      |
 | Reageren op (gebruikers)input                 | **Event handler**     |
 | Gebruiken van input of output                 | **CPX functie**       |
 | Hetzelfde doen op verschillende momenten      | **Functie**           |
 
-### Voorbeelden van patroonherkenning
-
-**Probleem**: "Laat 5 keer achter elkaar een LED knipperen" **Patroon**: Gebruiken output → **functie CPX**, Herhaling
-→ **for-loop**
-
-**Probleem**: "Monitor de temperatuur en zet een rode LED aan als deze hoger is dan 25" **Patroon**: Continu herhalen →
-**forever**, Gebruiken input → **functie CPX**, Beslissing → **if-statement**
-
-**Probleem**: "Onthoud hoeveel keer er op een knop is gedrukt" **Patroon**: Reageren op input → **event**, Waarde
-opslaan → **variabele**
-
-#### Opdracht: Patroonherkenning oefenen
+#### Opdracht
 
 Voor elk van de volgende problemen, schrijf eerst op welke techniek je zou gebruiken (variabele, if-statement,
 for-loop, etc.) en waarom:
@@ -136,7 +118,7 @@ for-loop, etc.) en waarom:
 7. "Zet alle LED's uit wanneer er op knop B wordt gedrukt"
 8. "Tel af van 10 naar 0 en speel bij 0 een geluid af"
 
-Kies er 3 uit, schrrijf daar pseudocode voor en implementeer deze in echte code.
+Kies er 3 uit, maak het plan af en implementeer deze.
 
 ## Geavanceerde for-loop voorbeelden
 
@@ -167,7 +149,7 @@ for (let i = 0; i < 5; i++) {
 
 Wat doen bovenstaande for-loop voorbeelden?
 
-#### Opdracht: Combinatie-oefening
+#### Opdracht
 
 - Maak een variabele `ledCount` met waarde 8
 - Gebruik een for-loop die van 0 tot `ledCount` loopt
@@ -175,10 +157,6 @@ Wat doen bovenstaande for-loop voorbeelden?
 - Gebruik een if-statement om te bepalen welke kleur elke LED krijgt
 
 ## Opdrachten
-
-Begin bij elke opdracht met te bedenken welke patronen je nodig hebt, en schrijf pseudocode.
-
-<!-- TODO: pseudocode optioneel maken? -->
 
 ### Opdracht 1: Tel van 1 tot 10
 

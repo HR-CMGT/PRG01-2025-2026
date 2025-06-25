@@ -1,5 +1,7 @@
 # Les 5: Functies met Parameters en Probleemoplossend Denken
 
+> Who's the (wo)man with the master plan
+
 ## Onderwerpen
 
 - Functies met parameters
@@ -12,10 +14,13 @@
 
 -->
 
+<!-- TODO: naamgeving -->
+<!-- TODO: lokale variabelen en scope -->
+
 ## Functies met parameters
 
 In les 2 hebben we functies gemaakt om code te groeperen. Dit waren functies waarbij niets tussen de haakjes stond,
-zoals `allLedsRed()`. Op de CPX hebben we dit soort functies ook gezoen, zoals `light.clear()`. Soms wil je een functie
+zoals `allLedsRed()`. Op de CPX hebben we dit soort functies ook gezien, zoals `light.clear()`. Soms wil je een functie
 informatie meegeven. Dit doe je met **parameters** die je tussen de haakjes zet. De functie kan deze waarde dan
 gebruiken. Op de CPX hebben we dit bijvoorbeeld gezien met `pause(2000)` waarbij je tussen haakjes zet hoeveel
 milliseconden je wil pauzeren.
@@ -194,27 +199,29 @@ function moveLed(direction: number) {
 
 ## Probleemoplossend denken
 
-Als problemen groter worden, wordt het steeds lastiger om meteen met code te beginnen. Vandaar dat we vaak geoefend
-hebben met pseudocode en vorige les programmeerpatronen bekeken hebben.
+Als problemen groter worden, wordt het steeds lastiger om meteen met code te beginnen. Vandaar dat we vaak vooraf een
+plan gemaakt hebben voor we gingen implementeren. Een truc om grote problemen kleiner te maken is door ze 'in stukken
+te hakken', deze deelproblemen kan je dan vaak in een aparte functie plaatsen en oplossen, vandaar dat we een extra
+stap toevoegen aan het plan.
 
 ### Stappenplan
 
 1. **Probleem analyseren**: Wat moet er precies gebeuren?
-2. **Patronen herkennen**: Welke programmeertechnieken heb je nodig?
-3. **Pseudocode schrijven**: Plan je oplossing in gewone taal
-4. **Functies identificeren**: Welke taken kun je in functies onderverdelen?
-5. **Code implementeren**: Vertaal je plan naar echte code
-6. **Testen**: Controleer of alles werkt zoals verwacht
+2. **Bouwstenen herkennen**: Welke programmeertechnieken heb je nodig?
+3. **Pseudocode schrijven (optioneel)**: Plan complexere oplossingen eerst (deels) in gewone taal
+4. **Functies identificeren**: Welke deelproblemen kan je in een functie zetten?
+5. **Implementeren**: Vertaal je plan naar echte code
+6. **Testen**: Controleer of alles werkt zoals verwacht `if !ok { goto 1, 2, 3, 4, 5 }`
 
-<!-- TODO: stappen namen geven zoals nu, of alleen de beschrijving van de stap? Functies identificeren door AI toegevoegd, erin laten? (is op zich wel handig als je begint met programmeren, en past goed bij de les) -->
-
-### Patronen
+### Bouwstenen
 
 | Probleem                                      | Oplossing                  |
 | --------------------------------------------- | -------------------------- |
 | Iets onthouden voor later                     | **Globale variabele**      |
+| Vaste waarden                                 | **Constanten**             |
 | Rekenen of dingen veranderen                  | **Operatoren**             |
 | Keuzes maken                                  | **If-statement**           |
+| Iets één keer doen                            | **Losse code**             |
 | Iets meerdere keren (ongeveer) hetzelfde doen | **For-loop**               |
 | Iets continu blijven herhalen                 | **Forever-loop**           |
 | Reageren op (gebruikers)input                 | **Event handler**          |
@@ -232,7 +239,7 @@ hebben met pseudocode en vorige les programmeerpatronen bekeken hebben.
 - Rood → Oranje → Groen → herhalen
 - Elke kleur moet even blijven staan
 
-**Stap 2 - Patronen herkennen**:
+**Stap 2 - Bouwstenen herkennen**:
 
 - Waarden onthouden voor LED posities → **variabelen**
 - Continu herhalen → **Forever loop**
@@ -290,28 +297,26 @@ forever(function () {
 - Controle of de timing klopt
 - Testen of het blijft herhalen
 
-#### Opdracht: Patronen herkennen
-
-Analyseer deze problemen en identificeer welke patronen je nodig hebt:
+#### Opdracht
 
 1. "Maak een digitale dobbelsteen die een willekeurig getal van 1-6 toont als LED's wanneer je schudt"
 
-   - Welke patronen herken je?
+   - Welke bouwstenen herken je?
    - Schrijf pseudocode
 
 2. "Tel hoeveel keer knop A is ingedrukt en toon dit met LED's"
 
-   - Welke patronen herken je?
+   - Welke bouwstenen herken je?
    - Schrijf pseudocode
 
 3. "Laat een LED rondjes maken, sneller als de temperatuur hoger is"
-   - Welke patronen herken je?
+   - Welke bouwstenen herken je?
    - Schrijf pseudocode
 
 ## Mini-case: Alarmsysteem
 
 **Probleem**: Maak een alarmsysteem, dat reageert op beweging. Wanneer je op knop A drukt, gaat het alarm aan (rode
-LED's + geluid). Wanneer je op knop B drukt, gaat het alarm uit.
+knipperende LED's + geluid). Wanneer je op knop B drukt, gaat het alarm uit.
 
 ### Stap 1: Analyseer het probleem
 
@@ -332,9 +337,8 @@ LED's + geluid). Wanneer je op knop B drukt, gaat het alarm uit.
 variabelen:
     - ...
 
-functie setAlarm:
-    - parameter: ...
-    - ...
+functie ...:
+    - parameters nodig?
 
 event handlers:
     - ...
@@ -415,37 +419,10 @@ Vragen:
 
 ### Opdracht 5: Mini-case uitwerken
 
-Kies één van deze problemen en werk het volledig uit volgens de 5 stappen:
+Kies één van deze problemen en werk het volledig uit volgens het stappenplan:
 
 1. **Reactiespel**: Laat een willekeurige LED oplichten, speler moet de juiste knop indrukken binnen 3 seconden
 2. **Muziekinstrument**: Verschillende knoppen/sensoren spelen verschillende noten af
 3. **Temperatuurmeter**: Toon met LED-kleuren hoe warm het is (blauw=koud, groen=normaal, rood=warm)
-
-Voor elk probleem:
-
-- Schrijf eerst pseudocode
-- Identificeer alle benodigde globale variabelen en functies
-- Implementeer stap voor stap
-- Test je oplossing uitgebreid
-
-## Patroonherkenning samenvatting
-
-Je hebt nu alle basispatronen geleerd. Bij elk probleem kun je deze checklist gebruiken:
-
-### Checklist voor probleemoplossing
-
-1. **Analyseer eerst**: Wat moet er gebeuren?
-2. **Herken patronen**: Welke technieken heb je nodig?
-   - Moet ik iets onthouden? → **Globale variabele**
-   - Moet ik een keuze maken? → **If-statement**
-   - Moet ik iets herhalen? → **For-loop** of **Forever**
-   - Moet ik reageren op input? → **Event handler**
-   - Moet ik dezelfde actie met verschillende waarden? → **Functie met parameters**
-   - Is de taak complex? → **Meerdere functies**
-3. **Schrijf pseudocode**
-4. **Implementeer stap voor stap**
-5. **Test grondig**
-
-Deze aanpak wordt steeds belangrijker naarmate de problemen complexer worden!
 
 <!-- TODO: laatste opdrachten nalezen -->

@@ -24,7 +24,7 @@ Bijvoorbeeld:
 
 ```typescript
 let price = 10;
-let name = "Super";
+let status = "playing";
 ```
 
 De waarde kan je later veranderen (vandaar de naam: variabele). Omdat de variabele al bestaat, hoef je geen `let` meer
@@ -32,13 +32,19 @@ te gebruiken, en dat het ook niet meer!
 
 ```typescript
 price = 20; // price is nu: 20
-name = name + "man"; // name is nu: Superman
+status = "gameover"; // status is nu: gameover
 ```
 
 ### Declaratie
 
 We declareren variabelen bij deze cursus voorlopig altijd bovenaan ons programma. Hierdoor worden de variabelen
 **globaal**, waardoor je ze overal in je programma kunt gebruiken. In les 5 zullen we hier verder op in gaan.
+
+### Naamgeving
+
+Geef variabelen altijd een naam die aangeeft waar de variabele voor is in het Engels. Variabelen beginnen we altijd met
+een kleine letter, en we gebruiken hoofdletters om aan te geven dat er meerdere woorden gebruikt zijn (er mag namelijk
+geen spatie in de naam van een variabele), bijvoorbeeld: `numberOfStudents`.
 
 ### Waarde tonen met console.log
 
@@ -69,7 +75,7 @@ datatypes zijn:
 Voorbeelden:
 
 ```typescript
-let age = 16; // number
+let age = 18; // number
 let studentName = "Alex"; // string
 let isFinished = false; // boolean
 ```
@@ -113,16 +119,42 @@ Met gewone aanhalingstekens (' ' of " ") kan dat niet, dan wordt alles letterlij
   hiervoor de variabelen.
 - Verander de waarde van `score` en laat het nieuwe bericht opnieuw zien.
 
+## Constanten
+
+Soms wil je een waarde opslaan die niet meer mag veranderen tijdens je programma. Hiervoor gebruik je een **constante**
+in plaats van een variabele. Je maakt een constante met het keyword `const` in plaats van `let`.
+
+```typescript
+const maxScore = 100;
+const gameName = "Super Quiz";
+const numberOfLeds = 10;
+```
+
+Een constante moet altijd meteen een waarde krijgen wanneer je hem aanmaakt. Je kunt de waarde later niet meer
+veranderen:
+
+```typescript
+const pi = 3.14;
+// pi = 3.14159; // Dit geeft een fout!
+```
+
+### Wanneer gebruik je constanten?
+
+Gebruik constanten voor waarden die in je hele programma hetzelfde blijven.
+
+Dit maakt je code duidelijker dan wanneer je de waarde zelf in je programma zet omdat je aan de naam ziet waar iets
+voor is. Ook voorkomt het tikfouten, of dat je per ongeluk belangrijke waarden verandert.
+
 #### Opdracht: Cookie clicker
 
-Schrijf eerst pseudocode, en daarna de echte code:
+Maak eerst een plan en bedenk welke variabelen je nodig hebt, schrijf daarna de code:
 
 Maak het spelletje button-clicker. Hierbij klikt iemand zo snel mogelijk op button A, en toont de computer hoe vaak je
 geklikt hebt.
 
 Expert: maak een twee speler versie met A en B.
 
-## Functies zonder parameters
+## Functies
 
 Een **functie** is een stukje code dat je een naam geeft. Je kunt de functie later aanroepen door de naam te gebruiken.
 Dit houd je code overzichtelijk en voorkomt dat je dezelfde code meerdere keren moet schrijven, als je programma op
@@ -221,7 +253,7 @@ nextLed(); // LED 0 wordt groen
 nextLed(); // LED 1 wordt groen
 ```
 
-Lees bovenstaande code. Leg in één zin uit wat dit programma doet. Bestudeer de functie `nextLes()`, begrijp je waar
+Lees bovenstaande code. Leg in één zin uit wat dit programma doet. Bestudeer de functie `nextLed()`, begrijp je waar
 elke regel voor is?
 
 #### Opdracht
@@ -259,6 +291,20 @@ function showScore() {
 - Wat doet de functie `resetGame`?
 - Wat doet de functie `showScore`?
 - Wat gebeurt er als je `addPoint()` drie keer aanroept?
+
+## Bouwstenen
+
+| Probleem                                 | Oplossing             |
+| ---------------------------------------- | --------------------- |
+| Iets onthouden voor later                | **Globale variabele** |
+| Vaste waarden                            | **Constanten**        |
+| Iets één keer doen                       | **Losse code**        |
+| Iets continu blijven herhalen            | **Forever-loop**      |
+| Reageren op (gebruikers)input            | **Event handler**     |
+| Gebruiken van input of output            | **CPX functie**       |
+| Hetzelfde doen op verschillende momenten | **Functie**           |
+
+<!-- Opdrachten uitdunnen / aanpassen, meer op bouwstenen schrijven -->
 
 ## Opdrachten
 

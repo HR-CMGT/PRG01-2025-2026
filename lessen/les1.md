@@ -8,13 +8,19 @@
 - on start, forever, en event-handlers
 - Kleurdefinities
 
-<!-- Waarschijnlijk beter om on start niet te benoemen -->
+<!-- Waarschijnlijk beter om on start niet te benoemen, maar dan wel bedenken hoe dat in pseudocode te doen -->
 
 <!--
 
 - Kennismaken met de programmeeromgeving
 - Eerste eenvoudige programma's schrijven
 - Wat is programmeren? (logica + code)
+-->
+
+<!--
+
+ TODO: hier al beginnen met planmatig werken voor opdrachten (analyse + bouwstenen).
+ pseudocode alleen bij ingewikkelde dingen
 
 -->
 
@@ -52,11 +58,18 @@ _Voorbeeld pseudocode voor een auto bij het verkeerslicht:_
 - Als het licht op oranje staat:
   - Stop als je nog kunt, anders rij voorzichtig door
 
+<!-- TODO: door de klas lopen toevoegen, metro er misschien uit of naar zelfstudie -->
+
 #### Opdracht
 
 - Schrijf pseudocode voor inchecken bij de metro:
   - Eerst voor een persoon die incheckt
   - Daarna het algoritme voor het poortje zelf
+
+#### Opdracht
+
+- Schrijf pseudocode om een vakje te kiezen met boter-kaas-eieren, wissel de pseudocode met een klasgenoot, en speel
+  tegen elkaar om te zien wie de slimste pseudocode heeft
 
 ## Circuit Playground Express
 
@@ -81,8 +94,6 @@ doen.
 
 **Voorbeeld:**
 
-<!-- Ook comments al uitleggen? -->
-
 ```typescript
 // Zet de LED's op rood
 light.setAll(Colors.Red);
@@ -95,7 +106,7 @@ _Met `//` geef je aan dat de computer alles wat daarna komt op die regel over mo
 
 #### Opdracht
 
-Schrijf eerst pseudocode, en daarna de echte code:
+Zoek eerst uit welke functies van de CPX je nodig hebt, en schrijf daarna pas de code:
 
 - Laat de bovenste twee LED's branden
 - Maak een patroon met LED'jes
@@ -105,22 +116,28 @@ Schrijf eerst pseudocode, en daarna de echte code:
 Als je wilt dat code steeds opnieuw wordt uitgevoerd (bijvoorbeeld om iets te blijven controleren of een animatie te
 maken), zet je deze in `forever`.
 
-#### Opdracht
-
-Schrijf eerst pseudocode, en daarna de echte code:
-
-- Laat alle LED's op de ring knipperen (zwart is uit)
-- Laat een rood LED'je oneindig rondjes draaien
-
 **Voorbeeld:**
 
 ```typescript
-forever(function () {
+loops.forever(function () {
   // Speel oneidig keer een vervelend toontje
   music.baDing.play();
   pause(1000);
 });
 ```
+
+### Accolades
+
+Accolades { } zijn speciale tekens die we gebruiken om codeblokken aan te geven. Je geeft hiermee aan dat deze code bij
+elkaar hoort. Dit wordt erg veel gebruikt in programma's. Bij forever wordt alle code die tussen de accolades staat
+oneindig herhaald.
+
+#### Opdracht
+
+Denk eerst goed na over wat er moet gebeuren, schrijf daarna pas de code:
+
+- Laat alle LED's op de ring knipperen (zwart is uit)
+- Laat een rood LED'je oneindig rondjes draaien
 
 ### De code moet uitgevoerd worden als er iets gebeurt (event)
 
@@ -137,25 +154,84 @@ input.buttonA.onEvent(ButtonEvent.Click, function () {
 });
 ```
 
+_Je ziet dat ook hier weer accolades gebruikt zijn om aan te geven wat er allemaal uitgevoerd moet worden als op A
+geklikt wordt._
+
 #### Opdracht
 
-Schrijf eerst pseudocode, en daarna de echte code:
+Denk eerst goed na over wat er moet gebeuren, zoek de juiste functies voor de CPX op, en schrijf daarna de code:
 
 - Als je op A klikt wordt er een animatie getoond, als je op B klikt klinkt er een muziekje.
 - Als je op A klikt gaan de LED's aan de linkerkant op groen, als je op B klikt de rechterkant. Let op, het moet niet
   kunnen dat alle LED's tegelijkertijd groen zijn.
 
+## Kleuren
+
+De Neopixels op de CPX werken met RGB-kleuren. Door rood, groen en blauw te 'mengen' kan je namelijk alle kleuren
+maken. Er zijn verschillende manieren om aan te geven wat voor kleur je wilt.
+
+```typescript
+// Maak pixels 0, 1, 2, 3 rood
+
+// Makkelijkst leesbaar en te onthouden
+light.setPixelColor(0, Colors.Red);
+// Zelfde als hiervoor, maar meer tikwerk
+light.setPixelColor(1, light.colors(Colors.Red));
+// Als je geen standaardkleur wilt gebruiken
+light.setPixelColor(2, light.rgb(255, 0, 0));
+// Als je handig bent met 'webcodes'
+light.setPixelColor(3, 0xff0000);
+```
+
+## Planmatig werken
+
+Omdat programmeren uit meer bestaat dan code schrijven, is het goed om voor je aan de code begint eerst een plan te
+maken.
+
+**Stap 1 - Analyseer het probleem**:
+
+Lees de opdracht goed. Wat moet er precies gebeuren?
+
+**Stap 2 - Bouwstenen herkennen**:
+
+Alle programma's zijn opgebouwd met dezelfde 'bouwstenen'. Bedenk welke je nodig hebt, en zoek eventueel functies van
+de CPX op die je nog niet kent.
+
+De bouwstenen die we tot nu toe gehad hebben zijn:
+
+| Probleem                                 | Oplossing                  |
+| ---------------------------------------- | -------------------------- |
+| Iets één keer doen                       | **Losse code**             |
+| Iets continu blijven herhalen            | **Forever-loop**           |
+| Reageren op (gebruikers)input            | **Event handler**          |
+| Gebruiken van input of output            | **CPX functie**            |
+| Hetzelfde doen op verschillende momenten | **Functie**                |
+| Hetzelfde doen met verschillende waarden | **Functie met parameters** |
+
+**Stap 3 - Pseudocode schrijven (optioneel)**
+
+Voor kleine programma's vaak niet nodig, maar zelfs dan kan het helpen om wat stappen even uit te schrijven.
+
+**Stap 4 - Implementeren**
+
+Schrijf de code.
+
+**Stap 5 - Testen**
+
+Test je code.
+
+Werkt het?
+
+- ✅ 🎉
+- ❌ 😭 ⬆️ (ga terug naar stap 1, 2, 3 of 4)
+
 #### Zelfstudie
 
-Schrijf bij programmeeropdrachten steeds eerst pseudocode, en daarna de echte code:
+Ga bij de programmeeropdrachten steeds planmatig te werk:
 
 - Laat de LEDs 1x knipperen
 - Zet alle LEDs aan als je op A klikt, zet ze weer uit als je de CPX schudt
-- Schrijf pseudocode om een vakje te kiezen met boter-kaas-eieren, wissel de pseudocode met een klasgenoot, en speel
-  tegen elkaar om te zien wie de slimste pseudocode heeft
 - De halve ring knippert, de andere helft zet je aan en uit met knop A en B
-- Reactiespel?
-<!-- TODO: Ga ik hier misschien weer te hard voor les 1? -->
 
 ## Links
 

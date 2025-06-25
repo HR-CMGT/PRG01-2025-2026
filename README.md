@@ -11,6 +11,12 @@ TODO:
 - functies terug laten komen in les 3 en 4
 - meer over debugging toevoegen
 - scheiding lesopdrachten en zelfstudie in elke les
+- ook CPX functies toevoegen
+- multiline coments behandelen?
+- shorthand notaties
+- && ||
+- loop in loop
+- formatting
 
 -->
 
@@ -28,8 +34,8 @@ een development bord dat programmeerbaar is in JavaScript.
 | Les 1 | Introductie. Programmastructuur, input/output en pseudocode, on start, forever, en event-handlers | [Link](./lessen/les1.md) |
 | Les 2 | Variabelen en zelf gedefinieerde functies zonder parameters                                       | [Link](./lessen/les2.md) |
 | Les 3 | Operatoren, vergelijkingen en if-statements                                                       | [Link](./lessen/les3.md) |
-| Les 4 | For-loops en patroonherkenning                                                                    | [Link](./lessen/les4.md) |
-| Les 5 | Functies met parameters en probleemoplossend denken (case)                                        | [Link](./lessen/les5.md) |
+| Les 4 | For-loops                                                                                         | [Link](./lessen/les4.md) |
+| Les 5 | Functies met parameters                                                                           | [Link](./lessen/les5.md) |
 | Les 6 | Oefentoets                                                                                        | [Link](./lessen/les6.md) |
 | Les 7 | Arrays en for-of-loops                                                                            | [Link](./lessen/les7.md) |
 | Les 8 | Herhaling / Miniproject                                                                           | [Link](./lessen/les8.md) |
