@@ -1,9 +1,9 @@
-# Les 2: Variabelen en Functies zonder Parameters
+# Les 2: Variabelen en Functies
 
 ## Onderwerpen
 
 - Variabelen
-- Zelf gedefinieerde functies zonder parameters
+- Zelf gedefinieerde functies maken
 
 <!--
 

@@ -1,4 +1,4 @@
-# Les 5: Functies met Parameters en Probleemoplossend Denken
+# Les 5: Functies met Parameters
 
 > Who's the (wo)man with the master plan
 
