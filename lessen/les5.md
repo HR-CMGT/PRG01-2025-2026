@@ -1,7 +1,5 @@
 # Les 5: Functies met Parameters
 
-> Who's the (wo)man with the master plan
-
 ## Onderwerpen
 
 - Functies met parameters

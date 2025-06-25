@@ -185,6 +185,8 @@ light.setPixelColor(3, 0xff0000);
 
 ## Planmatig werken
 
+> Who's the (wo)man with the master plan
+
 Omdat programmeren uit meer bestaat dan code schrijven, is het goed om voor je aan de code begint eerst een plan te
 maken.
 
