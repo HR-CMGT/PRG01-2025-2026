@@ -163,3 +163,4 @@ if (score >= 80) {
 | Hetzelfde doen op verschillende momenten | **Functie**           |
 
 <!-- TODO: Opdrachten toevoegen -->
+<!-- TODO: shorthand notaties? -->

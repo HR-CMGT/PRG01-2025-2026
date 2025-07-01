@@ -145,6 +145,30 @@ Gebruik constanten voor waarden die in je hele programma hetzelfde blijven.
 Dit maakt je code duidelijker dan wanneer je de waarde zelf in je programma zet omdat je aan de naam ziet waar iets
 voor is. Ook voorkomt het tikfouten, of dat je per ongeluk belangrijke waarden verandert.
 
+#### Opdracht
+
+Gebruik telkens de bestaande variabelen om de ontbrekende (…) variabelen te vullen. Verander `let` in `const` waar dat
+logischer is.
+
+Toon het resultaat met `console.log`, en gebruik hierbij alle variabelen en de `${}` syntax.
+
+```typescript
+let numberOfStudents = 50;
+let numberOfTeachers = 10;
+let numberOfChairs = ...;
+// hoeveel stoelen zijn er nodig?
+
+let rentPerMonth = 420;
+let numberOfMonths = 5;
+let totalRent = ...;
+// hoeveel huur moet ik betalen?
+
+let subscriptionPerMonth = 20;
+let extraCostsPerMonth = 5;
+let costsPerMonth = ...;
+let costsPerYear = ...;
+```
+
 #### Opdracht: Cookie clicker
 
 Maak eerst een plan en bedenk welke variabelen je nodig hebt, schrijf daarna de code:
@@ -292,6 +316,13 @@ function showScore() {
 - Wat doet de functie `showScore`?
 - Wat gebeurt er als je `addPoint()` drie keer aanroept?
 
+#### Opdracht
+
+- Schrijf een functie `allLedsRed` die alle LED's rood maakt
+- Schrijf een functie `allLedsOff` die alle LED's uitzet
+- Schrijf een functie `firstThreeLedsBlue` die de eerste 3 LED's blauw maakt
+- Test alle functies
+
 ## Bouwstenen
 
 | Probleem                                 | Oplossing             |
@@ -306,44 +337,22 @@ function showScore() {
 
 <!-- Opdrachten uitdunnen / aanpassen, meer op bouwstenen schrijven -->
 
-## Opdrachten
+### Zelfstudie
 
-### Opdracht 1: LED functies
+Bedenk van tevoren goed welke bouwstenen je nodig hebt.
 
-- Schrijf een functie `allLedsRed` die alle LED's rood maakt
-- Schrijf een functie `allLedsOff` die alle LED's uitzet
-- Schrijf een functie `firstThreeLedsBlue` die de eerste 3 LED's blauw maakt
-- Test alle functies
+- Schrijf een programma met een teller. Als je op A klikt komt er 1 bij, klik je op B dan gaat er 1 af. Maak een
+  functie die de waarde van de teller in een net bericht toont, en gebruik deze voor zowel knop A als B.
+- Schrijf een programma met een teller die elke seconde 1 groter gemaakt wordt en de huidige waarde laat zien in de
+  console. Als je op A klikt begint de teller opnieuw.
 
-### Opdracht 2: Teller functies
+- Maak een stappenplan voor een programma dat een LED laat branden op de Circuit Playground. Met knop A kan je hem
+  rechtsom laten bewegen, met knop B linksom. Als je met De CP schudt gaat hij terug naar de startpositie. Schrijf
+  daarna de code. Tip: Je hebt `light.setpixelcolor()` nodig
+  <!-- TODO: voeg animatie toe -->
 
-- Maak een globale variabele `clickCount` met waarde 0
-- Schrijf een functie `countClick` die de teller verhoogt en het resultaat toont
-- Schrijf een functie `resetCounter` die de teller op 0 zet
-- Schrijf een functie `showTotal` die het huidige totaal toont
-- Test alle functies
+- Zoek uit hoe randomRange (te vinden onder Math) werkt: https://makecode.adafruit.com/reference/math/random-range
+  Gebruik randomRange om een willekeurige LED te laten branden als je op A klikt. Werkt het programma zoals je verwacht
+  had?
 
-### Opdracht 3: LED patroon
-
-- Maak een globale variabele `patternStep` met waarde 0
-- Schrijf een functie `showPattern` die afhankelijk van `patternStep` een andere LED aanzet:
-  - Step 0: LED 0 rood
-  - Step 1: LED 1 en 2 groen
-  - Step 2: LED 3, 4, 5 blauw
-  - Step 3: alle LED's uit
-- Schrijf een functie `nextStep` die naar de volgende step gaat (en terug naar 0 na step 3)
-- Test door `nextStep()` en `showPattern()` afwisselend aan te roepen
-
-### Opdracht 4: Mini-game
-
-Maak een eenvoudig spel met functies:
-
-- Een functie die het spel start
-- Een functie die de score bijhoudt
-- Een functie die het spel reset
-- Gebruik LED's om feedback te geven
-
-Schrijf eerst pseudocode voordat je begint met programmeren!
-
-<!-- TODO: laatste opdrachten nalopen en inkorten -->
 <!-- TODO: naamconventies functies -->
