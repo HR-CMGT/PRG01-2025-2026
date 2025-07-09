@@ -13,8 +13,8 @@
 
 ## Arrays
 
-Een **array** is een speciaal datatype waarin je meerdere waarden kunt opslaan. In plaats van losse variabelen voor
-elke waarde, kun je alles in één lijst zetten. Arrays zijn handig als je met veel vergelijkbare data werkt.
+Een _array_ is een speciaal datatype waarin je meerdere waarden kunt opslaan. In plaats van losse variabelen voor elke
+waarde, kun je alles in één lijst zetten. Arrays zijn handig als je met veel vergelijkbare data werkt.
 
 ### Array maken
 
@@ -26,7 +26,7 @@ let names = ["Alex", "Sarah", "Tom"];
 
 ### Waarden uit array halen
 
-Je kunt waarden uit een array halen met de **index** (positie). Let op: arrays beginnen bij 0!
+Je kunt waarden uit een array halen met de _index_ (positie). Let op: arrays beginnen bij 0!
 
 ```typescript
 let fruits = ["apple", "banana", "orange"];
@@ -50,7 +50,7 @@ let myArray = [1, 2, 3];
 console.log(myArray.length); // 3
 ```
 
-#### Opdracht
+#### Opdracht 7.1
 
 - Maak een array `ledPositions` met de waarden 0, 2, 4, 6, 8
 - Toon de eerste en laatste waarde in de console
@@ -86,7 +86,7 @@ for (let i = 0; i < colors.length; i++) {
 }
 ```
 
-#### Opdracht
+#### Opdracht 7.2
 
 - Maak een array `myNumbers` met de waarden 5, 10, 15, 20
 - Gebruik een for-loop om elk getal te tonen in de console
@@ -139,7 +139,7 @@ function runAnimation() {
 runAnimation();
 ```
 
-#### Opdracht
+#### Opdracht 7.3
 
 - Maak een array `temperatures` met de waarden 18, 22, 25, 30, 35
 - Bereken het gemiddelde van deze temperaturen met een for-loop
@@ -178,7 +178,7 @@ function showRainbow(colorList: number[]) {
 showRainbow(rainbowColors);
 ```
 
-#### Opdracht
+#### Opdracht 7.4
 
 - Schrijf een functie `countValues` die een array van getallen ontvangt
 - De functie telt hoeveel waarden groter zijn dan 10
@@ -204,7 +204,7 @@ showRainbow(rainbowColors);
 | Meerdere vergelijkbare waarden opslaan        | **Array**                     |
 | Door alle waarden in een lijst gaan           | **For-loop met array.length** |
 
-#### Opdracht
+#### Opdracht 7.5
 
 Voor elk probleem, identificeer welke bouwstenen je nodig hebt:
 
@@ -213,30 +213,28 @@ Voor elk probleem, identificeer welke bouwstenen je nodig hebt:
 3. "Zet LED's aan op posities die in een lijst staan"
 4. "Tel hoeveel temperatuurmetingen boven 25 graden zijn"
 
-## Opdrachten
-
-### Opdracht 1: Basis arrays
+#### Opdracht 7.6: Basis arrays
 
 - Maak een array `studentNames` met 4 namen
 - Maak een array `testScores` met 4 cijfers
 - Toon alle namen met een for-loop
 - Bereken het gemiddelde van alle toetsen (moet ook werken voor meer dan 4)
 
-### Opdracht 2: LED patronen
+#### Opdracht 7.7: LED patronen
 
 - Maak een array `ledSequence` met posities 0, 2, 4, 6, 8
 - Maak een array `sequenceColors` met 5 verschillende kleuren
 - Gebruik for-loops om de LED's op die posities in die kleuren aan te zetten
 - Maak een functie `clearPattern` die alle LED's op de posities uitzet
 
-### Opdracht 3: Muziek en geluid
+#### Opdracht 7.8: Muziek en geluid
 
 - Maak een array `alarmTones` met 3 verschillende toonhoogtes
 - Schrijf een functie `playAlarm` die alle tonen afspeelt
 - Maak een array `buttonSounds` met verschillende geluiden
 - Laat knop A door de array heen gaan en elk geluid afspelen
 
-### Opdracht 4: Data verwerken
+#### Opdracht 7.9: Data verwerken
 
 - Maak een array `dailyTemperatures` met 7 temperatuurwaarden
 - Bereken de gemiddelde temperatuur
@@ -244,7 +242,7 @@ Voor elk probleem, identificeer welke bouwstenen je nodig hebt:
 - Zoek de hoogste temperatuur
 - Toon alle resultaten met template strings
 
-### Opdracht 5: Interactief spel
+#### Opdracht 7.10: Interactief spel
 
 Maak een geheugenspel:
 
@@ -254,6 +252,13 @@ Maak een geheugenspel:
 - Gebruik arrays om zowel het patroon als de input op te slaan
 
 Schrijf eerst pseudocode voordat je begint!
+
+#### Zelfstudie 7.1
+
+Bedenk van tevoren goed welke bouwstenen je nodig hebt en gebruik arrays waar mogelijk:
+
+- Maak een LED-piano waarbij elke touch sensor een andere noot speelt en de bijbehorende LED oplicht
+- Schrijf een data-logger die sensorwaarden opslaat in een array en statistieken berekent
 
 <!-- TODO: meer opdrachten met sensoren, minder console? -->
 <!-- TODO: geheugenspel aanpassen, of als case voor les 8? -->

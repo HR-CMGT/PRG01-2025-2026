@@ -18,8 +18,8 @@
 
 ## Operatoren
 
-**Operatoren** zijn symbolen waarmee je bewerkingen (vaak berekeningen) kunt doen of waarden kunt vergelijken. Je kent
-ze al van wiskunde, zoals `+` en `-`. In programmeren gebruiken we dezelfde symbolen, maar er zijn er nog meer.
+_Operatoren_ zijn symbolen waarmee je bewerkingen (vaak berekeningen) kunt doen of waarden kunt vergelijken. Je kent ze
+al van wiskunde, zoals `+` en `-`. In programmeren gebruiken we dezelfde symbolen, maar er zijn er nog meer.
 
 <!-- TODO: Nog een modulus opdrachtje toevoegen -->
 <!-- TODO: Math.round/floor/ceil en random toevoegen -->
@@ -49,7 +49,7 @@ let total = 5 * 3; // total is nu 15
 console.log(total);
 ```
 
-#### Opdracht
+#### Opdracht 3.1
 
 - Maak een variabele `number1` met waarde 20
 - Maak een variabele `number2` met waarde 8
@@ -58,8 +58,8 @@ console.log(total);
 
 ## Vergelijkingsoperatoren
 
-Met vergelijkingsoperatoren kun je waarden met elkaar vergelijken. Het resultaat is altijd een **boolean**: `true`
-(waar) of `false` (niet waar):
+Met vergelijkingsoperatoren kun je waarden met elkaar vergelijken. Het resultaat is altijd een _boolean_: `true` (waar)
+of `false` (niet waar):
 
 | Operator | Betekenis             | Voorbeeld | Resultaat |
 | -------- | --------------------- | --------- | --------- |
@@ -87,7 +87,7 @@ console.log(score1 === score2); // true
 ## If-statements
 
 Deze vergelijksoperatoren hebben we nodig om beslissingen te laten nemen door een programma. Hiervoor gebruik je een
-**if-statement**. Een if-statement voert code alleen uit als een bepaalde voorwaarde waar is (`true`).
+_if-statement_. Een if-statement voert code alleen uit als een bepaalde voorwaarde waar is (`true`).
 
 De basis structuur is:
 
@@ -127,26 +127,34 @@ if (score >= 80) {
 }
 ```
 
-#### Opdracht
+#### Opdracht 3.2
 
 - Maak een variabele `playerScore` met waarde 85
 - Schrijf een if-statement dat "Je hebt gewonnen!" toont als de score hoger dan 80 is
 - Voeg een else toe die "Probeer het nog eens!" toont als de score 80 of lager is
 - Test met verschillende waardes
 
+#### Opdracht 3.3
+
 - Maak twee variabelen `temperature` (waarde 25) en `maxTemp` (waarde 30)
 - Controleer of de temperatuur hoger is dan de maximale temperatuur
 - Controleer of de temperatuur gelijk is aan 25
 - Toon beide resultaten in de console
 
-## Opdrachten
+#### Opdracht 3.4
 
 - Schrijf een programma dat controleert of een variabele groter is dan 10
-- Led een rondje
-- Heen en weer
-- Toggle led
 - Gebruik een if-statement om een LED aan of uit te zetten
-- Rekenopdrachtjes met tekst
+
+#### Opdracht 3.5
+
+- Maak een LED-toggle functie die een LED aan/uit zet
+- Gebruik een if-statement om te controleren of de LED al aan is
+
+#### Opdracht 3.6
+
+- Schrijf een programma dat rekent met variabelen en de uitkomst in tekst toont
+- Gebruik string templates om het resultaat netjes weer te geven
 
 ## Bouwstenen
 
@@ -161,6 +169,13 @@ if (score >= 80) {
 | Reageren op (gebruikers)input            | **Event handler**     |
 | Gebruiken van input of output            | **CPX functie**       |
 | Hetzelfde doen op verschillende momenten | **Functie**           |
+
+#### Zelfstudie 3.1
+
+Bedenk van tevoren goed welke bouwstenen je nodig hebt:
+
+- Maak een programma dat een LED laat "rondjeslopen" op de Circuit Playground
+- Maak een LED-patroon dat continu heen en weer beweegt (denk hier eerst goed over na)
 
 <!-- TODO: Opdrachten toevoegen -->
 <!-- TODO: shorthand notaties? -->

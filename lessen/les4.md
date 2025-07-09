@@ -12,7 +12,7 @@
 ## For-loops
 
 Soms wil je een stukje code meerdere keren uitvoeren. In plaats van dezelfde code telkens opnieuw te schrijven (daar
-houden programmeurs niet van) kan je een **for-loop** gebruiken. Een for-loop herhaalt code een bepaald aantal keren.
+houden programmeurs niet van) kan je een _for-loop_ gebruiken. Een for-loop herhaalt code een bepaald aantal keren.
 
 De basis structuur van een for-loop is:
 
@@ -44,7 +44,7 @@ Herhaling nummer: 3
 Herhaling nummer: 4
 ```
 
-#### Opdracht
+#### Opdracht 4.1
 
 ```typescript
 for (let i = 1; i <= 10; i++) {
@@ -54,7 +54,7 @@ for (let i = 1; i <= 10; i++) {
 
 Wat toont deze code in de console?
 
-#### Opdracht
+#### Opdracht 4.2
 
 - Maak een for-loop die "Hallo!" 3 keer toont in de console
 - Maak een for-loop die van 0 tot 7 telt
@@ -83,13 +83,13 @@ for (let i = 0; i < 10; i++) {
 }
 ```
 
-#### Opdracht
+#### Opdracht 4.3
 
 - Maak een for-loop die alle LED's groen maakt
 - Maak een for-loop die de LED's één voor één rood laat oplichten met een pauze van 300 milliseconden
 - Maak een for-loop die de eerste 5 LED's blauw maakt
 
-### Bouwstenen
+## Bouwstenen
 
 | Probleem                                      | Oplossing             |
 | --------------------------------------------- | --------------------- |
@@ -104,7 +104,7 @@ for (let i = 0; i < 10; i++) {
 | Gebruiken van input of output                 | **CPX functie**       |
 | Hetzelfde doen op verschillende momenten      | **Functie**           |
 
-#### Opdracht
+#### Opdracht 4.4
 
 Voor elk van de volgende problemen, schrijf eerst op welke techniek je zou gebruiken (variabele, if-statement,
 for-loop, etc.) en waarom:
@@ -145,28 +145,26 @@ for (let i = 0; i < 5; i++) {
 }
 ```
 
-#### Opdracht
+#### Opdracht 4.5
 
 Wat doen bovenstaande for-loop voorbeelden?
 
-#### Opdracht
+#### Opdracht 4.6
 
 - Maak een variabele `ledCount` met waarde 8
 - Gebruik een for-loop die van 0 tot `ledCount` loopt
 - Zet de eerste helft van de LED's op groen, de tweede helft op rood
 - Gebruik een if-statement om te bepalen welke kleur elke LED krijgt
 
-## Opdrachten
-
-### Opdracht 1: Tel van 1 tot 10
+#### Opdracht 4.7: Tel van 1 tot 10
 
 Maak een programma dat van 1 tot 10 telt en elk getal toont in de console.
 
-### Opdracht 2: LED's één voor één oplichten
+#### Opdracht 4.8: LED's één voor één oplichten
 
 Maak een programma dat alle LED's op de Circuit Playground Express één voor één aan zet, met een pauze tussen elke LED.
 
-### Opdracht 3: Knipperend patroon
+#### Opdracht 4.9: Knipperend patroon
 
 Maak een programma dat:
 
@@ -176,6 +174,15 @@ Maak een programma dat:
 4. Wacht 500 milliseconden
 5. Dit 5 keer herhaalt
 
-### Opdracht 4: Regenboog maken
+#### Opdracht 4.10: Regenboog maken
 
 Zet alle LED's één voor één aan, en geef daarbij elke LED een andere kleur.
+
+#### Zelfstudie 4.1
+
+Bedenk van tevoren goed welke bouwstenen je nodig hebt:
+
+- Schrijf een countdown-timer die van 10 naar 0 telt en bij 0 een geluid afspeelt
+- Maak een programma dat een LED-ring laat "ademhalen" door alle LED's langzaam aan en uit te laten gaan
+
+<!-- TODO: eenvoudige zelfstudie teovoegen -->

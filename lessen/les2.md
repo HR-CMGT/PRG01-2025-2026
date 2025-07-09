@@ -14,7 +14,7 @@
 
 ## Variabelen
 
-Een **variabele** gebruik je om een waarde op te slaan in je programma. Een beetje zoals je rekent met letters bij
+Een _variabele_ gebruik je om een waarde op te slaan in je programma. Een beetje zoals je rekent met letters bij
 wiskunde `x=1`, maar in een programma kan je ook langere namen gebruiken en andere dingen opslaan. Als je een nieuwe
 variabele maakt, gebruik je het keyword `let`. We noemen dit het **declareren** van een variabele. Voor het eerst een
 waarde in een variabele zetten noemen we **initialseren**. Zoals je hieronder kan zien declareren en initialiseren we
@@ -38,7 +38,7 @@ status = "gameover"; // status is nu: gameover
 ### Declaratie
 
 We declareren variabelen bij deze cursus voorlopig altijd bovenaan ons programma. Hierdoor worden de variabelen
-**globaal**, waardoor je ze overal in je programma kunt gebruiken. In les 5 zullen we hier verder op in gaan.
+_globaal_, waardoor je ze overal in je programma kunt gebruiken. In les 5 zullen we hier verder op in gaan.
 
 ### Naamgeving
 
@@ -58,14 +58,14 @@ let age = 16;
 console.log(age); // laat 16 zien in de console
 ```
 
-#### Opdracht
+#### Opdracht 2.1
 
 - Maak een variabele `counter` aan en toon hem in de console.
 - Tel er 1 bij op, en check of het goed gegaan is in de console.
 
 ## Datatypes
 
-In JavaScript kun je verschillende soorten waarden opslaan in variabelen. Dit noem je **datatypes**. De belangrijkste
+In JavaScript kun je verschillende soorten waarden opslaan in variabelen. Dit noem je _datatypes_. De belangrijkste
 datatypes zijn:
 
 - **Getallen** (numbers): bijvoorbeeld `10`, `3.14`, `-5`
@@ -111,7 +111,7 @@ let answer = `1 + 1 = ${1 + 1}`;
 
 Met gewone aanhalingstekens (' ' of " ") kan dat niet, dan wordt alles letterlijk als tekst gezien.
 
-#### Opdracht
+#### Opdracht 2.2
 
 - Maak een variabele `studentName` aan en geef deze een waarde.
 - Maak een variabele `score` aan en geef deze een getal.
@@ -121,7 +121,7 @@ Met gewone aanhalingstekens (' ' of " ") kan dat niet, dan wordt alles letterlij
 
 ## Constanten
 
-Soms wil je een waarde opslaan die niet meer mag veranderen tijdens je programma. Hiervoor gebruik je een **constante**
+Soms wil je een waarde opslaan die niet meer mag veranderen tijdens je programma. Hiervoor gebruik je een _constante_
 in plaats van een variabele. Je maakt een constante met het keyword `const` in plaats van `let`.
 
 ```typescript
@@ -145,7 +145,7 @@ Gebruik constanten voor waarden die in je hele programma hetzelfde blijven.
 Dit maakt je code duidelijker dan wanneer je de waarde zelf in je programma zet omdat je aan de naam ziet waar iets
 voor is. Ook voorkomt het tikfouten, of dat je per ongeluk belangrijke waarden verandert.
 
-#### Opdracht
+#### Opdracht 2.3
 
 Gebruik telkens de bestaande variabelen om de ontbrekende (…) variabelen te vullen. Verander `let` in `const` waar dat
 logischer is.
@@ -169,7 +169,7 @@ let costsPerMonth = ...;
 let costsPerYear = ...;
 ```
 
-#### Opdracht: Cookie clicker
+#### Opdracht 2.4: Cookie clicker
 
 Maak eerst een plan en bedenk welke variabelen je nodig hebt, schrijf daarna de code:
 
@@ -180,7 +180,7 @@ Expert: maak een twee speler versie met A en B.
 
 ## Functies
 
-Een **functie** is een stukje code dat je een naam geeft. Je kunt de functie later aanroepen door de naam te gebruiken.
+Een _functie_ is een stukje code dat je een naam geeft. Je kunt de functie later aanroepen door de naam te gebruiken.
 Dit houd je code overzichtelijk en voorkomt dat je dezelfde code meerdere keren moet schrijven, als je programma op
 verschillende plekken hetzelfde moet doen. Ook is het makkelijker om fouten in je programma te vinden, omdat alle code
 voor een bepaalde _functionaliteit_ van je programma bij elkaar staat.
@@ -248,14 +248,14 @@ incrementCounter(); // Counter is now: 1
 incrementCounter(); // Counter is now: 2
 ```
 
-#### Opdracht
+#### Opdracht 2.5
 
 - Schrijf een functie `showWelcome` die een welkomstbericht toont
 - Schrijf een functie `lightRedLed` die LED 0 rood maakt
 - Schrijf een functie `lightBlueLed` die LED 1 blauw maakt
 - Test alle functies door ze aan te roepen
 
-#### Opdracht
+#### Opdracht 2.6
 
 ```typescript
 let currentLed = 0;
@@ -280,7 +280,7 @@ nextLed(); // LED 1 wordt groen
 Lees bovenstaande code. Leg in één zin uit wat dit programma doet. Bestudeer de functie `nextLed()`, begrijp je waar
 elke regel voor is?
 
-#### Opdracht
+#### Opdracht 2.7
 
 - Maak een globale variabele `ledPosition` met waarde 0
 - Schrijf een functie `lightCurrentLed` die de LED op positie `ledPosition` geel maakt
@@ -288,7 +288,7 @@ elke regel voor is?
 - Schrijf een functie `moveToPreviousLed` die `ledPosition` met 1 verlaagt
 - Zorgt dat knop A `moveToNextLed` en knop B `moveToPreviousLed` aanroept.
 
-#### Opdracht
+#### Opdracht 2.8
 
 Bekijk deze code en probeer te begrijpen wat er gebeurt:
 
@@ -316,7 +316,7 @@ function showScore() {
 - Wat doet de functie `showScore`?
 - Wat gebeurt er als je `addPoint()` drie keer aanroept?
 
-#### Opdracht
+#### Opdracht 2.9
 
 - Schrijf een functie `allLedsRed` die alle LED's rood maakt
 - Schrijf een functie `allLedsOff` die alle LED's uitzet
@@ -337,7 +337,7 @@ function showScore() {
 
 <!-- Opdrachten uitdunnen / aanpassen, meer op bouwstenen schrijven -->
 
-### Zelfstudie
+#### Zelfstudie 2.1
 
 Bedenk van tevoren goed welke bouwstenen je nodig hebt.
 

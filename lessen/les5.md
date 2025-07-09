@@ -19,9 +19,9 @@
 
 In les 2 hebben we functies gemaakt om code te groeperen. Dit waren functies waarbij niets tussen de haakjes stond,
 zoals `allLedsRed()`. Op de CPX hebben we dit soort functies ook gezien, zoals `light.clear()`. Soms wil je een functie
-informatie meegeven. Dit doe je met **parameters** die je tussen de haakjes zet. De functie kan deze waarde dan
+informatie meegeven. Dit doe je met _parameters_ die je tussen de haakjes zet. De functie kan deze waarde dan
 gebruiken. Op de CPX hebben we dit bijvoorbeeld gezien met `pause(2000)` waarbij je tussen haakjes zet hoeveel
-milliseconden je wil pauzeren.
+milliseconden je wil pauzeren. tussen haakjes zet hoeveel milliseconden je wil pauzeren.
 
 ### Eenvoudig voorbeeld
 
@@ -35,8 +35,7 @@ sayHello("Alex"); // Hello, Alex!
 sayHello("Sarah"); // Hello, Sarah!
 ```
 
-De waarde die je meegeeft (`"Alex"` of `"Sarah"`) noem je een **argument**. Dit wordt toegewezen aan de parameter
-`name`.
+De waarde die je meegeeft (`"Alex"` of `"Sarah"`) noem je een _argument_. Dit wordt toegewezen aan de parameter `name`.
 
 ### Functie met meerdere parameters
 
@@ -54,7 +53,7 @@ showMessage("Lisa", 17); // Lisa is 17 years old
 
 ### Datatypes
 
-Je ziet dat we bij elke parameter het **datatype** aangeven:
+Je ziet dat we bij elke parameter het _datatype_ aangeven:
 
 - `string` voor tekst
 - `number` voor getallen
@@ -64,7 +63,7 @@ In gewoon JavaScript doe je dit niet. Wij moeten dit wel doen, omdat de CPX eige
 
 <!-- TODO: JS voorbeeld toevoegen? -->
 
-#### Opdracht
+#### Opdracht 5.1
 
 - Maak een variabele `playerName` met jouw naam
 - Maak een variabele `playerScore` met waarde 85
@@ -99,7 +98,7 @@ function blinkLed(position: number, color: number) {
 blinkLed(3, Colors.Red);
 ```
 
-#### Opdracht
+#### Opdracht 5.2
 
 - Schrijf een functie `setLedColor` die een positie en kleur als parameters heeft
 - Test de functie door verschillende LED's verschillende kleuren te geven
@@ -142,7 +141,7 @@ showPattern(patternColor, patternSpeed);
 showPattern(Colors.Red, 500);
 ```
 
-#### Opdracht
+#### Opdracht 5.3
 
 - Maak globale variabelen `startNumber` (waarde 5) en `ledColor` (waarde Colors.Green)
 - Schrijf een functie `countdown` die een startgetal als parameter heeft
@@ -151,7 +150,7 @@ showPattern(Colors.Red, 500);
 - De functie laat alle LED's het opgegeven aantal keer oplichten in die kleur
 - Test beide functies met je globale variabelen
 
-#### Opdracht
+#### Opdracht 5.4
 
 ```typescript
 let alarmActive = false;
@@ -172,7 +171,7 @@ function setAlarm(isActive: boolean) {
 - Wat gebeurt er als je `setAlarm(false)` aanroept?
 - Waarom gebruikt de functie `===` in plaats van `=`?
 
-#### Opdracht
+#### Opdracht 5.5
 
 ```typescript
 let currentLed = 0;
@@ -295,7 +294,7 @@ forever(function () {
 - Controle of de timing klopt
 - Testen of het blijft herhalen
 
-#### Opdracht
+#### Opdracht 5.6
 
 1. "Maak een digitale dobbelsteen die een willekeurig getal van 1-6 toont als LED's wanneer je schudt"
 
@@ -357,9 +356,7 @@ Gebruik functies met parameters waar mogelijk.
 - Test of knop B het alarm uitzet
 - Test of het alarm blijft werken na meerdere keren aan/uit
 
-## Opdrachten
-
-### Opdracht 1: Basis functies met parameters
+#### Opdracht 5.7: Basis functies met parameters
 
 - Maak globale variabelen: `firstName` (jouw voornaam), `className` (jouw klas), `number1` (waarde 12), `number2`
   (waarde 8)
@@ -369,7 +366,7 @@ Gebruik functies met parameters waar mogelijk.
 - Deze functie toont de som van beide getallen met een template string
 - Test beide functies met je globale variabelen
 
-### Opdracht 2: LED patronen
+#### Opdracht 5.8: LED patronen
 
 - Maak globale variabelen: `favoriteColor` (een kleur), `blinkCount` (waarde 3)
 - Schrijf een functie `fillLeds` die een kleur als parameter heeft
@@ -378,7 +375,7 @@ Gebruik functies met parameters waar mogelijk.
 - Deze functie laat alle LED's het opgegeven aantal keer knipperen
 - Test met je globale variabelen en andere waarden
 
-### Opdracht 3: Geluid en licht
+#### Opdracht 5.9: Geluid en licht
 
 - Maak globale variabelen voor verschillende toonhoogtes
 - Schrijf een functie `ledAndSound` die een LED-positie, kleur en toonhoogte als parameters heeft
@@ -387,7 +384,7 @@ Gebruik functies met parameters waar mogelijk.
 - Elke LED heeft een andere kleur en speelt een andere toon
 - Test je functies met verschillende combinaties
 
-### Opdracht 4: Code lezen
+#### Opdracht 5.10: Code lezen
 
 Bekijk deze code en beantwoord de vragen:
 
@@ -415,7 +412,7 @@ Vragen:
 - Wat gebeurt er als je `checkBonus()` aanroept terwijl `gameScore` 45 is?
 - Wat gebeurt er als je `checkBonus()` aanroept terwijl `gameScore` 60 is?
 
-### Opdracht 5: Mini-case uitwerken
+#### Opdracht 5.11: Mini-case uitwerken
 
 Kies één van deze problemen en werk het volledig uit volgens het stappenplan:
 
@@ -423,4 +420,10 @@ Kies één van deze problemen en werk het volledig uit volgens het stappenplan:
 2. **Muziekinstrument**: Verschillende knoppen/sensoren spelen verschillende noten af
 3. **Temperatuurmeter**: Toon met LED-kleuren hoe warm het is (blauw=koud, groen=normaal, rood=warm)
 
-<!-- TODO: laatste opdrachten nalezen -->
+#### Zelfstudie 5.1
+
+Bedenk van tevoren goed welke bouwstenen je nodig hebt en gebruik functies met parameters waar mogelijk:
+
+- Maak een programma dat een disco-effect creëert met verschillende LED-patronen die je kunt activeren met knoppen
+
+<!-- TODO: laatste opdrachten nalezen, zelfstudie uitbreiden -->

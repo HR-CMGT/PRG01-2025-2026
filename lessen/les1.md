@@ -60,13 +60,13 @@ _Voorbeeld pseudocode voor een auto bij het verkeerslicht:_
 
 <!-- TODO: door de klas lopen toevoegen, metro er misschien uit of naar zelfstudie -->
 
-#### Opdracht
+#### Opdracht 1.1
 
 - Schrijf pseudocode voor inchecken bij de metro:
   - Eerst voor een persoon die incheckt
   - Daarna het algoritme voor het poortje zelf
 
-#### Opdracht
+#### Opdracht 1.2
 
 - Schrijf pseudocode om een vakje te kiezen met boter-kaas-eieren, wissel de pseudocode met een klasgenoot, en speel
   tegen elkaar om te zien wie de slimste pseudocode heeft
@@ -104,7 +104,7 @@ light.setAll(Colors.Red);
 _Met `//` geef je aan dat de computer alles wat daarna komt op die regel over moet slaan. Je gebruikt dit om uitleg
 (bij programmeren noemen we dit 'commentaar') toe te voegen aan je programma._
 
-#### Opdracht
+#### Opdracht 1.3
 
 Zoek eerst uit welke functies van de CPX je nodig hebt, en schrijf daarna pas de code:
 
@@ -129,10 +129,10 @@ loops.forever(function () {
 ### Accolades
 
 Accolades { } zijn speciale tekens die we gebruiken om codeblokken aan te geven. Je geeft hiermee aan dat deze code bij
-elkaar hoort. Dit wordt erg veel gebruikt in programma's. Bij forever wordt alle code die tussen de accolades staat
+elkaar hoort. Dit wordt erg veel gebruikt in programma's. Bij _forever_ wordt alle code die tussen de accolades staat
 oneindig herhaald.
 
-#### Opdracht
+#### Opdracht 1.4
 
 Denk eerst goed na over wat er moet gebeuren, schrijf daarna pas de code:
 
@@ -142,8 +142,7 @@ Denk eerst goed na over wat er moet gebeuren, schrijf daarna pas de code:
 ### De code moet uitgevoerd worden als er iets gebeurt (event)
 
 Soms wil je dat code alleen wordt uitgevoerd als er iets gebeurt, bijvoorbeeld als je op een knop drukt. Hiervoor
-gebruik je een **event-handler**. De syntax hiervan is best lastig, dus het is het makkelijkst om deze code te
-'slepen'.
+gebruik je een _event-handler_. De syntax hiervan is best lastig, dus het is het makkelijkst om deze code te 'slepen'.
 
 **Voorbeeld:**
 
@@ -157,7 +156,7 @@ input.buttonA.onEvent(ButtonEvent.Click, function () {
 _Je ziet dat ook hier weer accolades gebruikt zijn om aan te geven wat er allemaal uitgevoerd moet worden als op A
 geklikt wordt._
 
-#### Opdracht
+#### Opdracht 1.5
 
 Denk eerst goed na over wat er moet gebeuren, zoek de juiste functies voor de CPX op, en schrijf daarna de code:
 
@@ -227,7 +226,7 @@ Werkt het?
 - ✅ 🎉
 - ❌ 😭 ⬆️ (ga terug naar stap 1, 2, 3 of 4)
 
-#### Zelfstudie
+#### Zelfstudie 1.1
 
 Ga bij de programmeeropdrachten steeds planmatig te werk:
 
