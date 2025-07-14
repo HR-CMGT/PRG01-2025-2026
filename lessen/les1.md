@@ -195,8 +195,8 @@ Lees de opdracht goed. Wat moet er precies gebeuren?
 
 **Stap 2 - Bouwstenen herkennen**:
 
-Alle programma's zijn opgebouwd met dezelfde 'bouwstenen'. Bedenk welke als je gaat programmeren welke bouwstenen je
-nodig hebt, en zoek eventueel functies van de CPX op die je nog niet kent.
+Alle programma's zijn opgebouwd met dezelfde 'bouwstenen'. Bedenk als je gaat programmeren welke bouwstenen je nodig
+hebt, en zoek eventueel functies van de CPX op die je nog niet kent.
 
 De bouwstenen die we tot nu toe gehad hebben zijn:
 
@@ -234,7 +234,7 @@ Ga bij de programmeeropdrachten steeds planmatig te werk:
 - Laat de LED-ring de hele tijd wisselen tussen drie patronen
 - Zet alle LEDs aan als je op A klikt, zet ze weer uit als je de CPX schudt
 - De linkerkant van de ring knippert continu, de rechter helft zet je zelf aan met knop A en uit met knop B
-- Zoek uit hoe `console.log()` werkt, en gebruik dit om continu de temperatuur bij te houden
+- Zoek uit hoe `console.log()` werkt, en gebruik dit om continu de temperatuur te laten zien in de console
 
 ## Links
 

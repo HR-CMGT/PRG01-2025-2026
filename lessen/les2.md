@@ -28,7 +28,7 @@ let status = "playing";
 ```
 
 De waarde kan je later veranderen (vandaar de naam: variabele). Omdat de variabele al bestaat, hoef je geen `let` meer
-te gebruiken, en dat het ook niet meer!
+te gebruiken, en dat mag ook niet meer!
 
 ```typescript
 price = 20; // price is nu: 20
@@ -87,7 +87,6 @@ Een string is een stukje tekst. In JavaScript zet je een string altijd tussen aa
 
 ```typescript
 let studentName = "Alex";
-let message = "Hallo";
 let sentence = `Dit is een string`;
 ```
 
@@ -103,8 +102,8 @@ Voorbeeld:
 
 ```typescript
 let name = "Alex";
-let message = `Hello, ${name}!`;
-// Hello, Alex!
+let message = `Hallo, ${name}!`;
+// Hallo, Alex!
 let answer = `1 + 1 = ${1 + 1}`;
 // 1 + 1 = 2
 ```
@@ -135,7 +134,7 @@ veranderen:
 
 ```typescript
 const pi = 3.14;
-// pi = 3.14159; // Dit geeft een fout!
+// pi = 3.14159; // Dit geeft een fout, als je dat later in het programma doet!
 ```
 
 ### Wanneer gebruik je constanten?
@@ -356,3 +355,4 @@ Bedenk van tevoren goed welke bouwstenen je nodig hebt.
   had?
 
 <!-- TODO: naamconventies functies -->
+<!-- TODO: template opdrachten uit de presentatie toevoegen >
