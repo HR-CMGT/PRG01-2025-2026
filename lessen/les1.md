@@ -230,11 +230,11 @@ Werkt het?
 
 Ga bij de programmeeropdrachten steeds planmatig te werk:
 
-- Laat de LEDs 1x knipperen
-- Laat de LED-ring de hele tijd wisselen tussen drie patronen
-- Zet alle LEDs aan als je op A klikt, zet ze weer uit als je de CPX schudt
-- De linkerkant van de ring knippert continu, de rechter helft zet je zelf aan met knop A en uit met knop B
-- Zoek uit hoe `console.log()` werkt, en gebruik dit om continu de temperatuur te laten zien in de console
+1. Laat de LEDs 1x knipperen
+2. Laat de LED-ring de hele tijd wisselen tussen drie patronen
+3. Zet alle LEDs aan als je op A klikt, zet ze weer uit als je de CPX schudt
+4. De linkerkant van de ring knippert continu, de rechter helft zet je zelf aan met knop A en uit met knop B
+5. Zoek uit hoe `console.log()` werkt, en gebruik dit om continu de temperatuur te laten zien in de console
 
 ## Links
 

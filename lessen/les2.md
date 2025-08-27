@@ -342,22 +342,39 @@ function showScore() {
 
 <!-- Opdrachten uitdunnen / aanpassen, meer op bouwstenen schrijven? -->
 
-#### Zelfstudie 2.1
+#### Zelfstudie 2
 
 Bedenk van tevoren goed welke bouwstenen je nodig hebt.
 
-- Schrijf een programma met een teller. Als je op A klikt komt er 1 bij, klik je op B dan gaat er 1 af. Maak een
-  functie die de waarde van de teller in een net bericht toont, en gebruik deze voor zowel knop A als B.
-- Schrijf een programma met een teller die elke seconde 1 groter gemaakt wordt en de huidige waarde laat zien in de
-  console. Als je op A klikt begint de teller opnieuw.
+1. Schrijf een programma met een teller. Als je op A klikt komt er 1 bij, klik je op B dan gaat er 1 af. Maak een
+   functie die de waarde van de teller in een net bericht toont, en gebruik deze voor zowel knop A als B.
+2. Schrijf een programma met een teller die elke seconde 1 groter gemaakt wordt en de huidige waarde laat zien in de
+   console. Als je op A klikt begint de teller opnieuw.
 
-- Maak een stappenplan voor een programma dat een LED laat branden op de Circuit Playground. Met knop A kan je hem
-  rechtsom laten bewegen, met knop B linksom. Als je met De CP schudt gaat hij terug naar de startpositie. Schrijf
-  daarna de code. Tip: Je hebt `light.setpixelcolor()` nodig
-  <!-- TODO: voeg animatie toe -->
+3. Maak een stappenplan voor een programma dat een LED laat branden op de Circuit Playground. Met knop A kan je hem
+rechtsom laten bewegen, met knop B linksom. Als je met De CP schudt gaat hij terug naar de startpositie. Schrijf daarna
+de code. Tip: Je hebt `light.setpixelcolor()` nodig
+<!-- TODO: voeg animatie toe -->
 
-- Zoek uit hoe randomRange (te vinden onder Math) werkt: https://makecode.adafruit.com/reference/math/random-range
-  Gebruik randomRange om een willekeurige LED te laten branden als je op A klikt. Werkt het programma zoals je verwacht
-  had?
+4. Zoek uit hoe randomRange (te vinden onder Math) werkt: https://makecode.adafruit.com/reference/math/random-range
+   Gebruik randomRange om een willekeurige LED te laten branden als je op A klikt. Werkt het programma zoals je
+   verwacht had?
 
-<!-- TODO: template opdrachten uit de presentatie bij zelfstudie toevoegen >
+5. Gebruik telkens de bestaande variabelen om de ontbrekende (…) variabelen te vullen. Verander `let` in `const` waar
+   dat logischer is. Toon alle resultaten met `console.log` en gebruik hierbij de `${}` syntax:
+
+```typescript
+let pricePerKG = 2.15;
+let weightInGrams = 150;
+let totalPrice = ...; // bereken de totaalprijs (let op: gewicht is in grammen!)
+
+let firstName = "Ash";
+let lastName = "Ketchum";
+let message = ...; // maak een bericht: "Hallo, Ash Ketchum!"
+
+let hamburger = 4.20;
+let fries = 1.80;
+let numberOfBurgers = 3;
+let numberOfFries = 5;
+let totalBill = ...; // bereken de totale rekening
+```

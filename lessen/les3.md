@@ -22,7 +22,6 @@ _Operatoren_ zijn symbolen waarmee je bewerkingen (vaak berekeningen) kunt doen 
 al van wiskunde, zoals `+` en `-`. In programmeren gebruiken we dezelfde symbolen, maar er zijn er nog meer.
 
 <!-- TODO: Nog een modulus opdrachtje toevoegen -->
-<!-- TODO: Math.round/floor/ceil en random toevoegen -->
 
 ### Rekenoperatoren
 
@@ -49,12 +48,36 @@ let total = 5 * 3; // total is nu 15
 console.log(total);
 ```
 
+### Math
+
+JavaScript heeft een ingebouwd `Math` object met (heel veel) handige functies om met getallen te werken. Wij maken het
+meest gebruik van onderstaande functies:
+
+| Functie              | Betekenis                                                        | Voorbeeld                | Resultaat  |
+| -------------------- | ---------------------------------------------------------------- | ------------------------ | ---------- |
+| `Math.round()`       | Afronding naar dichtstbijzijnde gehele getal                     | `Math.round(4.7)`        | `5`        |
+|                      |                                                                  | `Math.round(4.3)`        | `4`        |
+| `Math.floor()`       | Afronding naar beneden                                           | `Math.floor(4.9)`        | `4`        |
+| `Math.ceil()`        | Afronding naar boven                                             | `Math.ceil(4.1)`         | `5`        |
+| `Math.random()`      | Willekeurig kommagetal tussen 0 en 1                             | `Math.random()`          | `0.247...` |
+| `Math.randomRange()` | Willekeurig geheel getal in een range (bestaat alleen op de CPX) | `Math.randomRange(1, 6)` | `4`        |
+
+Voorbeelden van gebruik:
+
+```typescript
+let price = 12.99;
+let roundedPrice = Math.round(price); // 13
+
+console.log(`Prijs: ${roundedPrice}`);
+```
+
 #### Opdracht 3.1
 
 - Maak een variabele `number1` met waarde 20
 - Maak een variabele `number2` met waarde 8
-- Bereken de som, het verschil, het product en het quotiënt van deze getallen
-- Toon alle resultaten in de console
+- Bereken de som, het verschil, het product (\*) en het quotiënt (/) van deze getallen
+- Toon alle resultaten in de console met een net bericht
+- Gebruik `Math` om bij de deling een geheel resultaat te tonen
 
 ## Vergelijkingsoperatoren
 
@@ -169,12 +192,11 @@ if (score >= 80) {
 | Gebruiken van input of output            | **CPX functie**       |
 | Hetzelfde doen op verschillende momenten | **Functie**           |
 
-#### Zelfstudie 3.1
+#### Zelfstudie 3
 
 Bedenk van tevoren goed welke bouwstenen je nodig hebt:
 
-- Maak een programma dat een LED laat "rondjeslopen" op de Circuit Playground
-- Maak een LED-patroon dat continu heen en weer beweegt (denk hier eerst goed over na)
+1. Maak een programma dat een LED laat "rondjeslopen" op de Circuit Playground
+2. Maak een LED-patroon dat continu heen en weer beweegt (denk hier eerst goed over na)
 
-<!-- TODO: Opdrachten toevoegen -->
-<!-- TODO: shorthand notaties? -->
+<!-- TODO: Opdrachten toevoegen / Pokemon zelfstudie? -->
