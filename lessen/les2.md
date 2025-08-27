@@ -193,6 +193,12 @@ function functionName() {
 functionName();
 ```
 
+### Naamgeving
+
+Namen van functies schrijven we net als bij variabelen altijd met een kleine letter aan het begin, en met hoofdletters
+om verschillende woorden aan te geven. De functienaam moet ook duidelijk, in het Engels, beschrijven wat de functie
+doet.
+
 ### Voorbeeld
 
 ```typescript
@@ -334,7 +340,7 @@ function showScore() {
 | Gebruiken van input of output            | **CPX functie**       |
 | Hetzelfde doen op verschillende momenten | **Functie**           |
 
-<!-- Opdrachten uitdunnen / aanpassen, meer op bouwstenen schrijven -->
+<!-- Opdrachten uitdunnen / aanpassen, meer op bouwstenen schrijven? -->
 
 #### Zelfstudie 2.1
 
@@ -354,5 +360,4 @@ Bedenk van tevoren goed welke bouwstenen je nodig hebt.
   Gebruik randomRange om een willekeurige LED te laten branden als je op A klikt. Werkt het programma zoals je verwacht
   had?
 
-<!-- TODO: naamconventies functies -->
-<!-- TODO: template opdrachten uit de presentatie toevoegen >
+<!-- TODO: template opdrachten uit de presentatie bij zelfstudie toevoegen >

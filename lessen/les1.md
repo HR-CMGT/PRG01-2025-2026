@@ -226,7 +226,7 @@ Werkt het?
 - ✅ 🎉
 - ❌ 😭 ⬆️ (ga terug naar stap 1, 2, 3 of 4)
 
-#### Zelfstudie 1.1
+#### Zelfstudie les 1
 
 Ga bij de programmeeropdrachten steeds planmatig te werk:
 

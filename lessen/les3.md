@@ -153,8 +153,7 @@ if (score >= 80) {
 
 #### Opdracht 3.6
 
-- Schrijf een programma dat rekent met variabelen en de uitkomst in tekst toont
-- Gebruik string templates om het resultaat netjes weer te geven
+<!-- Template opdracht met if statement -->
 
 ## Bouwstenen
 
