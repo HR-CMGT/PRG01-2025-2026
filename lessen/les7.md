@@ -253,7 +253,7 @@ Maak een geheugenspel:
 
 Schrijf eerst pseudocode voordat je begint!
 
-#### Zelfstudie 7.1
+#### Zelfstudie 7
 
 Bedenk van tevoren goed welke bouwstenen je nodig hebt en gebruik arrays waar mogelijk:
 

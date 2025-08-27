@@ -260,7 +260,7 @@ Zet alle LED's één voor één aan, en geef daarbij elke LED een andere kleur.
 | Gebruiken van input of output                 | **CPX functie**       |
 | Hetzelfde doen op verschillende momenten      | **Functie**           |
 
-#### Zelfstudie 4.1
+#### Zelfstudie 4
 
 Bedenk van tevoren goed welke bouwstenen je nodig hebt:
 

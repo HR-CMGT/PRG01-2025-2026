@@ -3,6 +3,7 @@
 ## Onderwerpen
 
 - Functies met parameters
+- Lokale variabelen en scope
 - Probleemoplossend denken (mini-case)
 
 <!--
@@ -13,7 +14,6 @@
 -->
 
 <!-- TODO: naamgeving -->
-<!-- TODO: lokale variabelen en scope -->
 
 ## Functies met parameters
 
@@ -63,6 +63,46 @@ In gewoon JavaScript doe je dit niet. Wij moeten dit wel doen, omdat de CPX eige
 
 <!-- TODO: JS voorbeeld toevoegen? -->
 
+## Lokale variabelen en scope (advanced)
+
+Tot nu toe hebben we altijd globale variabelen gebruikt - variabelen die bovenaan de code staan en overal gebruikt
+kunnen worden. Binnen functies kun je ook _lokale variabelen_ maken. Deze bestaan dan alleen binnen die functie, en
+kunnen nergens anders gebruikt worden.
+
+### Lokale variabelen
+
+```typescript
+let globalScore = 100; // Deze variabele bestaat overal
+
+function calculateBonus(basePoints: number) {
+  let bonus = basePoints * 2; // Deze variabele bestaat alleen in deze functie
+  let message = `Je krijgt ${bonus} bonuspunten!`; // Ook lokaal
+
+  console.log(message);
+  return bonus;
+}
+
+calculateBonus(50); // Je krijgt 100 bonuspunten!
+// console.log(bonus); // Dit zou een fout geven! bonus bestaat hier niet
+```
+
+### Scope (bereik)
+
+_Scope_ betekent: waar kan een variabele gebruikt worden?
+
+- **Globale scope**: Variabelen bovenaan je code kunnen overal gebruikt worden
+- **Functie scope**: Variabelen binnen een functie kunnen alleen binnen die functie gebruikt worden
+
+### Wanneer gebruik je lokale variabelen?
+
+Gebruik lokale variabelen voor:
+
+- Tijdelijke berekeningen binnen een functie
+- Waarden die alleen binnen die functie nodig zijn
+- Om te voorkomen dat je per ongeluk globale variabelen overschrijft
+
+````
+
 #### Opdracht 5.1
 
 - Maak een variabele `playerName` met jouw naam
@@ -82,7 +122,7 @@ function turnOnLed(position: number, color: number) {
 turnOnLed(0, Colors.Red); // LED 0 wordt rood
 turnOnLed(5, Colors.Blue); // LED 5 wordt blauw
 turnOnLed(9, Colors.Green); // LED 9 wordt groen
-```
+````
 
 ### LED laten knipperen
 
@@ -420,10 +460,10 @@ Kies één van deze problemen en werk het volledig uit volgens het stappenplan:
 2. **Muziekinstrument**: Verschillende knoppen/sensoren spelen verschillende noten af
 3. **Temperatuurmeter**: Toon met LED-kleuren hoe warm het is (blauw=koud, groen=normaal, rood=warm)
 
-#### Zelfstudie 5.1
+#### Zelfstudie 5
 
 Bedenk van tevoren goed welke bouwstenen je nodig hebt en gebruik functies met parameters waar mogelijk:
 
 - Maak een programma dat een disco-effect creëert met verschillende LED-patronen die je kunt activeren met knoppen
 
-<!-- TODO: laatste opdrachten nalezen, zelfstudie uitbreiden -->
+<!-- TODO: laatste opdrachten nalezen, zelfstudie uitbreiden? Of ruimte voor voorbereiding oefentoets -->
