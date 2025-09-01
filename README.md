@@ -29,13 +29,13 @@ een development bord dat programmeerbaar is in JavaScript.
 
 ## Lessen
 
-| Les   | Inhoud                                                                                            |                          |
-| ----- | ------------------------------------------------------------------------------------------------- | ------------------------ |
-| Les 1 | Introductie. Programmastructuur, input/output en pseudocode, on start, forever, en event-handlers | [Link](./lessen/les1.md) |
-| Les 2 | Variabelen en zelf gedefinieerde functies zonder parameters                                       | [Link](./lessen/les2.md) |
-| Les 3 | Operatoren, vergelijkingen en if-statements                                                       | [Link](./lessen/les3.md) |
-| Les 4 | For-loops                                                                                         | [Link](./lessen/les4.md) |
-| Les 5 | Functies met parameters                                                                           | [Link](./lessen/les5.md) |
-| Les 6 | Oefentoets                                                                                        | [Link](./lessen/les6.md) |
-| Les 7 | Arrays en for-of-loops                                                                            | [Link](./lessen/les7.md) |
-| Les 8 | Herhaling / Miniproject                                                                           | [Link](./lessen/les8.md) |
+| Les   | Inhoud                                                                                                                |
+| ----- | --------------------------------------------------------------------------------------------------------------------- |
+| Les 1 | [Introductie. Programmastructuur, input/output en pseudocode, on start, forever, en event-handlers](./lessen/les1.md) |
+| Les 2 | [Variabelen en zelf gedefinieerde functies zonder parameters](./lessen/les2.md)                                       |
+| Les 3 | [Operatoren, vergelijkingen en if-statements](./lessen/les3.md)                                                       |
+| Les 4 | [For-loops](./lessen/les4.md)                                                                                         |
+| Les 5 | [Functies met parameters](./lessen/les5.md)                                                                           |
+| Les 6 | [Oefentoets](./lessen/les6.md)                                                                                        |
+| Les 7 | [Arrays en for-of-loops](./lessen/les7.md)                                                                            |
+| Les 8 | [Herhaling / Miniproject](./lessen/les8.md)                                                                           |
