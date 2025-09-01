@@ -218,8 +218,7 @@ Maak een geluksspel met scores en berichten:
 Bedenk van tevoren goed welke bouwstenen je nodig hebt:
 
 1. Maak een programma dat een LED laat "rondjeslopen" op de Circuit Playground
-2. Maak een LED-patroon dat continu heen en weer beweegt (denk hier eerst goed over na)
-3. **Pokémon Vangst Spel** - Maak een digitale Pokédex:
+2. **Pokémon Vangst Spel** - Maak een digitale Pokédex:
    - Maak globale variabelen `totalPokemon` (waarde 141) en `pokemonCaught` (waarde 0)
    - **Knop A**: Probeer een Pokémon te vangen
      - Genereer een willekeurig getal tussen 1 en 6 met `Math.randomRange(1, 6)`
@@ -231,3 +230,4 @@ Bedenk van tevoren goed welke bouwstenen je nodig hebt:
      - Toon met string templates: `"Je hebt [aantal] van de [totaal] Pokémon gevangen ([percentage]%)"`
      - Als je precies de helft hebt: toon extra "Je bent halverwege!"
      - Als je alle 141 hebt: toon "Pokédex compleet! Je bent een Pokémon Master!"
+3. Maak een LED-patroon dat continu heen en weer beweegt (denk hier eerst goed over na)
