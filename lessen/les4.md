@@ -270,7 +270,7 @@ Bedenk van tevoren goed welke bouwstenen je nodig hebt:
 6. Maak een programma dat een LED-ring laat "ademhalen" door alle LED's langzaam aan en uit te laten gaan
 
 7. **Stappenteller met LED-display** - Maak een digitale stappenteller:
-   - Maak een globale variabele om het aantal stappen dat iemand zet bij te houden`stepCount`
+   - Maak een globale variabele om het aantal stappen dat iemand zet bij te houden
    - Bij elke stap (`onGesture`) tel je daar 1 bij op, en toon je het aantal stappen in de console
    - **Knop A**: Toon tientallen stappen als blauwe LED's (64 stappen = 6 blauwe LED's)
    - **Knop B**: Toon resterende stappen als groene LED's (64 stappen = 4 groene LED's na 6 tientallen)
