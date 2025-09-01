@@ -166,17 +166,38 @@ if (score >= 80) {
 
 #### Opdracht 3.4
 
-- Schrijf een programma dat controleert of een variabele groter is dan 10
-- Gebruik een if-statement om een LED aan of uit te zetten
+Maak een programma dat een LED bestuurt op basis van een getal:
+
+- Maak een variabele `score` met een waarde naar keuze (bijvoorbeeld 15)
+- Gebruik een if-statement om te controleren of `score` groter is dan 10
+- Als het getal groter is dan 10: zet LED 0 aan (rood)
+- Als het getal 10 of kleiner is: zet LED 0 uit
+- Test je programma door de waarde van `score` te veranderen
 
 #### Opdracht 3.5
 
-- Maak een LED-toggle functie die een LED aan/uit zet
-- Gebruik een if-statement om te controleren of de LED al aan is
+Maak een LED die aan/uit gaat als je op de knop drukt:
+
+- Maak een globale variabele `ledIsOn` met startwaarde `false`
+- Maak een functie `toggleLED()` die:
+  - Controleert met een if-statement of `ledIsOn` waar (`true`) is
+  - Als de LED aan is: zet LED 0 uit en verander `ledIsOn` naar `false`
+  - Als de LED uit is: zet LED 0 aan (rood) en verander `ledIsOn` naar `true`
+- Roep deze functie aan wanneer knop A wordt ingedrukt
+- Test door meerdere keren op knop A te drukken
 
 #### Opdracht 3.6
 
-<!-- Template opdracht met if statement -->
+Maak een geluksspel met scores en berichten:
+
+- Maak een variabele `playerName` met je eigen naam als waarde
+- Maak een variabele `randomScore` die een willekeurig getal tussen 0 en 100 krijgt
+- Gebruik een if-statement om te controleren of `randomScore` 50 of hoger is
+- Als de score 50 of hoger is: toon in de console `"Gefeliciteerd [naam]! Je hebt [score] punten behaald en gewonnen!"`
+- Als de score lager dan 50 is: toon in de console
+  `"Helaas [naam], je hebt [score] punten behaald. Probeer het nog eens!"`
+- Gebruik string templates (`${}`) om de naam en score in de berichten te tonen
+- Pas het programma aan zodat het gespeeld kan worden door op knop A te drukken
 
 ## Bouwstenen
 
@@ -198,5 +219,15 @@ Bedenk van tevoren goed welke bouwstenen je nodig hebt:
 
 1. Maak een programma dat een LED laat "rondjeslopen" op de Circuit Playground
 2. Maak een LED-patroon dat continu heen en weer beweegt (denk hier eerst goed over na)
-
-<!-- TODO: Opdrachten toevoegen / Pokemon zelfstudie? -->
+3. **Pokémon Vangst Spel** - Maak een digitale Pokédex:
+   - Maak globale variabelen `totalPokemon` (waarde 141) en `pokemonCaught` (waarde 0)
+   - **Knop A**: Probeer een Pokémon te vangen
+     - Genereer een willekeurig getal tussen 1 en 6 met `Math.randomRange(1, 6)`
+     - Als het getal 1 is: voeg 1 toe aan `pokemonCaught` en toon "Gefeliciteerd! Je vangt een nieuwe Pokémon!"
+     - Anders: toon "Helaas, geen Pokémon gevangen dit keer"
+     - Zorg dat je nooit meer dan 141 Pokémon kunt vangen
+   - **Knop B**: Toon voortgang
+     - Bereken het percentage gevangen Pokémon (delen door totaal × 100, afgerond)
+     - Toon met string templates: `"Je hebt [aantal] van de [totaal] Pokémon gevangen ([percentage]%)"`
+     - Als je precies de helft hebt: toon extra "Je bent halverwege!"
+     - Als je alle 141 hebt: toon "Pokédex compleet! Je bent een Pokémon Master!"
