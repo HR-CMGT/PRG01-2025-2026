@@ -89,8 +89,8 @@ https://makecode.adafruit.com/
 ### De code moet 1x worden uitgevoerd
 
 Soms wil je dat bepaalde code maar één keer wordt uitgevoerd, bijvoorbeeld om iets klaar te zetten of een beginwaarde
-te geven. Dit de standaard voor code die je in een JavaScript programma zet, dus daar hoef je niks bijzonders voor te
-doen.
+te geven. Dit is de standaard voor code die je in een JavaScript programma zet, dus daar hoef je niks bijzonders voor
+te doen.
 
 **Voorbeeld:**
 
