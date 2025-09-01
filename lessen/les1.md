@@ -200,14 +200,12 @@ hebt, en zoek eventueel functies van de CPX op die je nog niet kent.
 
 De bouwstenen die we tot nu toe gehad hebben zijn:
 
-| Probleem                                 | Oplossing                  |
-| ---------------------------------------- | -------------------------- |
-| Iets één keer doen                       | **Losse code**             |
-| Iets continu blijven herhalen            | **Forever-loop**           |
-| Reageren op (gebruikers)input            | **Event handler**          |
-| Gebruiken van input of output            | **CPX functie**            |
-| Hetzelfde doen op verschillende momenten | **Functie**                |
-| Hetzelfde doen met verschillende waarden | **Functie met parameters** |
+| Probleem                      | Oplossing         |
+| ----------------------------- | ----------------- |
+| Iets één keer doen            | **Losse code**    |
+| Iets continu blijven herhalen | **Forever-loop**  |
+| Reageren op (gebruikers)input | **Event handler** |
+| Gebruiken van input of output | **CPX functie**   |
 
 **Stap 3 - Pseudocode schrijven (optioneel)**
 
@@ -225,6 +223,10 @@ Werkt het?
 
 - ✅ 🎉
 - ❌ 😭 ⬆️ (ga terug naar stap 1, 2, 3 of 4)
+
+#### Opdracht 1.6
+
+Bedenk bij elke bouwsteen een (kleine) programmeeropdracht.
 
 #### Zelfstudie les 1
 
