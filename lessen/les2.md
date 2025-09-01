@@ -70,7 +70,7 @@ datatypes zijn:
 
 - **Getallen** (numbers): bijvoorbeeld `10`, `3.14`, `-5`
 - **Tekst** (strings): bijvoorbeeld `"Hallo"`, `"Superman"`
-- **Boolean** (waar of niet waar): `true` of `false`
+- **Boolean** (waar of niet waar): `true` of `false` (hierover in les 3 meer)
 
 Voorbeelden:
 
