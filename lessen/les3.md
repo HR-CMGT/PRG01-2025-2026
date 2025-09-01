@@ -221,13 +221,14 @@ Bedenk van tevoren goed welke bouwstenen je nodig hebt:
 2. **Pokémon Vangst Spel** - Maak een digitale Pokédex:
    - Maak globale variabelen `totalPokemon` (waarde 141) en `pokemonCaught` (waarde 0)
    - **Knop A**: Probeer een Pokémon te vangen
-     - Genereer een willekeurig getal tussen 1 en 6 met `Math.randomRange(1, 6)`
+     - Genereer een willekeurig getal tussen 1 en 6
      - Als het getal 1 is: voeg 1 toe aan `pokemonCaught` en toon "Gefeliciteerd! Je vangt een nieuwe Pokémon!"
      - Anders: toon "Helaas, geen Pokémon gevangen dit keer"
      - Zorg dat je nooit meer dan 141 Pokémon kunt vangen
    - **Knop B**: Toon voortgang
      - Bereken het percentage gevangen Pokémon (delen door totaal × 100, afgerond)
-     - Toon met string templates: `"Je hebt [aantal] van de [totaal] Pokémon gevangen ([percentage]%)"`
+     - Toon met string templates: `"Je hebt [aantal] van de [totaal] Pokémon gevangen ([percentage]%)"` (rond het
+       percentage netjes af)
      - Als je precies de helft hebt: toon extra "Je bent halverwege!"
      - Als je alle 141 hebt: toon "Pokédex compleet! Je bent een Pokémon Master!"
 3. Maak een LED-patroon dat continu heen en weer beweegt (denk hier eerst goed over na)
