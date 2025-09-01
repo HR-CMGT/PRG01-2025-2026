@@ -220,18 +220,13 @@ Wat doen bovenstaande for-loop voorbeelden?
 
 - Maak een variabele `ledCount` met waarde 8
 - Gebruik een for-loop die van 0 tot `ledCount` loopt
+
+#### Opdracht 4.9
+
 - Zet de eerste helft van de LED's op groen, de tweede helft op rood
 - Gebruik een if-statement om te bepalen welke kleur elke LED krijgt
 
-#### Opdracht 4.9: Tel van 1 tot 10
-
-Maak een programma dat van 1 tot 10 telt en elk getal toont in de console.
-
-#### Opdracht 4.10: LED's één voor één oplichten
-
-Maak een programma dat alle LED's op de Circuit Playground Express één voor één aan zet, met een pauze tussen elke LED.
-
-#### Opdracht 4.11: Knipperend patroon
+#### Opdracht 4.10: Knipperend patroon
 
 Maak een programma dat:
 
@@ -240,10 +235,6 @@ Maak een programma dat:
 3. Alle LED's uitzet
 4. Wacht 500 milliseconden
 5. Dit 5 keer herhaalt
-
-#### Opdracht 4.12: Regenboog maken
-
-Zet alle LED's één voor één aan, en geef daarbij elke LED een andere kleur.
 
 ## Bouwstenen
 
@@ -262,9 +253,26 @@ Zet alle LED's één voor één aan, en geef daarbij elke LED een andere kleur.
 
 #### Zelfstudie 4
 
+Gebruik for loops om onderstaande teksten te tonen (ze staan hier naast elkaar, maar op de CPX komen ze natuurlijk
+onder elkaar)
+
+1. 8x "Hoi": `"Hoi"` `"Hoi"` `"Hoi"` `"Hoi"` `"Hoi"` `"Hoi"` `"Hoi"` `"Hoi"`
+
+2. Getallen 0 t/m 4 tonen: `0` `1` `2` `3` `4`
+
+3. Even getallen van 0 t/m 12: `0` `2` `4` `6` `8` `10` `12`
+
+4. Tafel van 4: `1 maal 4 is 4` `2 maal 4 is 8` `3 maal 4 is 12` `4 maal 4 is 16` `5 maal 4 is 20` `6 maal 4 is 24`
+
 Bedenk van tevoren goed welke bouwstenen je nodig hebt:
 
-- Schrijf een countdown-timer die van 10 naar 0 telt en bij 0 een geluid afspeelt
-- Maak een programma dat een LED-ring laat "ademhalen" door alle LED's langzaam aan en uit te laten gaan
+5. Schrijf een countdown-timer die van 10 naar 0 telt en bij 0 een geluid afspeelt
+6. Maak een programma dat een LED-ring laat "ademhalen" door alle LED's langzaam aan en uit te laten gaan
 
-<!-- TODO: eenvoudige zelfstudie teovoegen / oude zelfstudies -->
+7. **Stappenteller met LED-display** - Maak een digitale stappenteller:
+   - Maak een globale variabele om het aantal stappen dat iemand zet bij te houden`stepCount`
+   - Bij elke stap (`onGesture`) tel je daar 1 bij op, en toon je het aantal stappen in de console
+   - **Knop A**: Toon tientallen stappen als blauwe LED's (64 stappen = 6 blauwe LED's)
+   - **Knop B**: Toon resterende stappen als groene LED's (64 stappen = 4 groene LED's na 6 tientallen)
+   - **Doel bereikt**: Voeg een constante toe met het stappendoel. Speel een melodie en toon een LED-animatie als het
+     doel bereikt wordt
