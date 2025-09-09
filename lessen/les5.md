@@ -20,8 +20,8 @@
 In les 2 hebben we functies gemaakt om code te groeperen. Dit waren functies waarbij niets tussen de haakjes stond,
 zoals `allLedsRed()`. Op de CPX hebben we dit soort functies ook gezien, zoals `light.clear()`. Soms wil je een functie
 informatie meegeven. Dit doe je met _parameters_ die je tussen de haakjes zet. De functie kan deze waarde dan
-gebruiken. Op de CPX hebben we dit bijvoorbeeld gezien met `pause(2000)` waarbij je tussen haakjes zet hoeveel
-milliseconden je wil pauzeren. tussen haakjes zet hoeveel milliseconden je wil pauzeren.
+gebruiken. Op de CPX hebben we dit bijvoorbeeld gezien met `loops.pause(2000)` waarbij je tussen haakjes zet hoeveel
+milliseconden je wil pauzeren. In onze eigen functies kunnen we dit
 
 ### Eenvoudig voorbeeld
 

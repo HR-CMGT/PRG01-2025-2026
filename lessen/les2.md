@@ -62,6 +62,7 @@ console.log(age); // laat 16 zien in de console
 
 - Maak een variabele `counter` aan en toon hem in de console.
 - Tel er 1 bij op, en check of het goed gegaan is in de console.
+- Pas de code aan zodat er elke seconde 1 bij opgeteld wordt.
 
 ## Datatypes
 
