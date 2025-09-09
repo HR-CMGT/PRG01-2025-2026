@@ -115,7 +115,7 @@ Met gewone aanhalingstekens (' ' of " ") kan dat niet, dan wordt alles letterlij
 
 - Maak een variabele `studentName` aan en geef deze een waarde.
 - Maak een variabele `score` aan en geef deze een getal.
-- Gebruik een string template om een bericht met `console.log()` te tonen: `Alex heeft 5 punten gehaald.` Gebruik
+- Gebruik een string template om een bericht met `console.log()` te tonen: `... heeft ... punten gehaald.` Gebruik
   hiervoor de variabelen.
 - Verander de waarde van `score` en laat het nieuwe bericht opnieuw zien.
 
