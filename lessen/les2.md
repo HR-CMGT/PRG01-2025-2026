@@ -279,8 +279,8 @@ function resetLeds() {
 
 // Gebruik van de functies
 resetLeds();
-nextLed(); // LED 0 wordt groen
 nextLed(); // LED 1 wordt groen
+nextLed(); // LED 2 wordt groen
 ```
 
 Lees bovenstaande code. Leg in één zin uit wat dit programma doet. Bestudeer de functie `nextLed()`, begrijp je waar
