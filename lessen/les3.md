@@ -75,7 +75,7 @@ console.log(`Prijs: ${roundedPrice}`);
 
 - Maak een variabele `number1` met waarde 20
 - Maak een variabele `number2` met waarde 8
-- Bereken de som, het verschil, het product (\*) en het quotiënt (/) van deze getallen
+- Bereken de som (+), het verschil (-), het product (\*) en het quotiënt (/) van deze getallen
 - Toon alle resultaten in de console met een net bericht
 - Gebruik `Math` om bij de deling een geheel resultaat te tonen
 
