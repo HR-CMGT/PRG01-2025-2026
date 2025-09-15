@@ -231,4 +231,4 @@ Bedenk van tevoren goed welke bouwstenen je nodig hebt:
        percentage netjes af)
      - Als je precies de helft hebt: toon extra "Je bent halverwege!"
      - Als je alle 141 hebt: toon "Pokédex compleet! Je bent een Pokémon Master!"
-3. Maak een LED-patroon dat continu heen en weer beweegt (denk hier eerst goed over na)
+3. Maak een LED'je dat continu heen en weer beweegt (denk hier eerst goed over na)
