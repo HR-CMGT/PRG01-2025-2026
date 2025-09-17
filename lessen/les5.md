@@ -106,8 +106,7 @@ Gebruik lokale variabelen voor:
 - Maak een variabele `playerName` met jouw naam
 - Maak een variabele `playerScore` met waarde 85
 - Schrijf een functie `showScore` die een naam (string) en score (number) als parameters heeft
-- De functie toont: `"Alex heeft 85 punten"`
-- Test de functie met je globale variabelen en met andere waarden
+- De functie toont: `"Alex heeft 85 punten, en moet nog 15 punten halen voor de winst."`
 
 ### LED op bepaalde positie aanzetten
 
@@ -246,7 +245,7 @@ stap toevoegen aan het plan.
 3. **Pseudocode schrijven (optioneel)**: Plan complexere oplossingen eerst (deels) in gewone taal
 4. **Functies identificeren**: Welke deelproblemen kan je in een functie zetten?
 5. **Implementeren**: Vertaal je plan naar echte code
-6. **Testen**: Controleer of alles werkt zoals verwacht `if !ok { goto 1, 2, 3, 4, 5 }`
+6. **Testen**: Controleer of alles werkt zoals verwacht `if (!ok) { goto 1, 2, 3, 4, 5 }`
 
 ### Bouwstenen
 
