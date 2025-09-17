@@ -101,8 +101,6 @@ Gebruik lokale variabelen voor:
 - Waarden die alleen binnen die functie nodig zijn
 - Om te voorkomen dat je per ongeluk globale variabelen overschrijft
 
-````
-
 #### Opdracht 5.1
 
 - Maak een variabele `playerName` met jouw naam
@@ -122,7 +120,7 @@ function turnOnLed(position: number, color: number) {
 turnOnLed(0, Colors.Red); // LED 0 wordt rood
 turnOnLed(5, Colors.Blue); // LED 5 wordt blauw
 turnOnLed(9, Colors.Green); // LED 9 wordt groen
-````
+```
 
 ### LED laten knipperen
 
