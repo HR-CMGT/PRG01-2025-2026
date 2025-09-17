@@ -18,10 +18,11 @@ gaan werken.
 
 #### Zelfstudie
 
-- Werk de 2 mini-cases uit (van 5.11) die je nog niet gedaan hebt (gebruik wel een koptelefoon als er nog mensen met de
-  oefentoets bezig zijn voor de case met geluid)
-- **Formule 1** - Maak een racegame voor twee spelers (A en B) op de LED-ring:
-  - Beide spelers starten op 0 (rood en groen). Met knop A of B zet je een stap vooruit.
-  - Als beide spelers op dezelfde LED staan, wordt deze geel.
-  - Wie als eerste op 9 komt, wint (de ring krijgt dan de kleur van de winnaar).
-  - Daarna kan er niet meer gespeeld worden. Reset met A+B.
+1. Werk de mini-cases uit (van Lesopdracht 5.11) die je nog niet gedaan hebt (gebruik wel een koptelefoon als er nog
+   mensen met de oefentoets bezig zijn voor de case met geluid)
+2. **Formule 1** - Maak een racegame voor twee spelers (A en B) op de LED-ring:
+
+- Beide spelers starten op 0 (rood en groen). Met knop A of B zet je een stap vooruit.
+- Als beide spelers op dezelfde LED staan, wordt deze geel.
+- Wie als eerste op 9 komt, wint (de ring krijgt dan de kleur van de winnaar).
+- Daarna kan er niet meer gespeeld worden. Reset met A+B.
