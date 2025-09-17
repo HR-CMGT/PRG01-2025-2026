@@ -456,14 +456,15 @@ Vragen:
 
 Kies één van deze problemen en werk het volledig uit volgens het stappenplan:
 
-1. **Reactiespel**: Laat een willekeurige LED oplichten, speler moet de juiste knop indrukken binnen 3 seconden
-2. **Muziekinstrument**: Verschillende knoppen/sensoren spelen verschillende noten af
-3. **Temperatuurmeter**: Toon met LED-kleuren hoe warm het is (blauw=koud, groen=normaal, rood=warm)
+1. **Muziekinstrument**: Maak een soort theramin, waarmee je de toonhoogte kunt veranderen door de CPX schuin te houden
+2. **Temperatuurmeter**: Toon met LED-kleuren hoe warm het is (blauw=koud, groen=normaal, rood=warm)
+3. **LED-dimmer**: Laat alle LEDs op de CPX branden, door te schudden wordt de helderheid gewisseld tussen
+   verschillende standen (vol, half, uit)
 
 #### Zelfstudie 5
 
 Bedenk van tevoren goed welke bouwstenen je nodig hebt en gebruik functies met parameters waar mogelijk:
 
-- Maak een programma dat een disco-effect creëert met verschillende LED-patronen die je kunt activeren met knoppen
-
-<!-- TODO: laatste opdrachten nalezen, zelfstudie uitbreiden? Of ruimte voor voorbereiding oefentoets -->
+- Verzin je eigen game op de Circuit Playground Express, waarin de speler een actie moet doen en daarmee punten kunt
+  halen. Post het resultaat in het Teams kanaal, gebruik daarvoor de SHARE button in de makecode omgeving!
+- Bereid je voor op de oefentoets
