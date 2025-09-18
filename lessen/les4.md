@@ -112,7 +112,7 @@ for (let i = 0; i < numberOfRepeats; i++) {
 
 ```typescript
 for (let i = 0; i < 5; i++) {
-  console.log("Herhaling nummer: " + i);
+  console.log(`Herhaling nummer: ${i}`);
 }
 ```
 
@@ -208,7 +208,7 @@ let counter = 5;
 
 for (let i = 0; i < 5; i++) {
   counter = counter + 1;
-  console.log("Counter is nu: " + counter);
+  console.log(`Counter is nu: ${counter}`);
 }
 ```
 
