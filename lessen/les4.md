@@ -139,7 +139,7 @@ Wat toont deze code in de console?
 #### Opdracht 4.4
 
 - Maak een for-loop die "Hallo!" 3 keer toont in de console
-- Maak een for-loop die van 0 tot 7 telt
+- Maak een for-loop die van 0 tot 7 telt en elk getal toont in de console
 - Maak een for-loop die van 1 tot 5 telt en elk getal toont in de console
 
 ## For-loops met LED's
