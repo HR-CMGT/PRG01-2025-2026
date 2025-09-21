@@ -18,7 +18,7 @@ gaan werken.
 
 #### Zelfstudie
 
-1. Werk de mini-cases uit (van Lesopdracht 5.11) die je nog niet gedaan hebt (gebruik wel een koptelefoon als er nog
+1. Werk de mini-cases uit (van Lesopdracht 5.9) die je nog niet gedaan hebt (gebruik wel een koptelefoon als er nog
    mensen met de oefentoets bezig zijn voor de case met geluid)
 2. **Formule 1** - Maak een racegame voor twee spelers (A en B) op de LED-ring:
 

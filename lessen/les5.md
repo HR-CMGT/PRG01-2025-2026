@@ -137,8 +137,9 @@ blinkLed(3, Colors.Red);
 
 #### Opdracht 5.2
 
-- Schrijf een functie `setLedColor` die een positie en kleur als parameters heeft
-- Test de functie door verschillende LED's verschillende kleuren te geven
+- Schrijf een functie `setLedPair` die een positie (0 t/m 4) en kleur als parameters heeft
+- De functie zet zowel de LED op die positie als de LED in spiegelbeeld (9 t/m 5) aan in die kleur
+- Test de functie door verschillende posities en kleuren te proberen
 - Schrijf een functie `blinkTwice` die een LED twee keer laat knipperen
 - Test beide functies met verschillende posities en kleuren
 
@@ -180,12 +181,9 @@ showPattern(Colors.Red, 500);
 
 #### Opdracht 5.3
 
-- Maak globale variabelen `startNumber` (waarde 5) en `ledColor` (waarde Colors.Green)
-- Schrijf een functie `countdown` die een startgetal als parameter heeft
-- De functie telt af van dat getal naar 0 en toont elk getal met console.log
 - Schrijf een functie `lightShow` die een kleur en aantal herhalingen als parameters heeft
 - De functie laat alle LED's het opgegeven aantal keer oplichten in die kleur
-- Test beide functies met je globale variabelen
+- Test de functie
 
 #### Opdracht 5.4
 
@@ -206,7 +204,6 @@ function setAlarm(isActive: boolean) {
 - Wat doet de variabele `alarmActive`?
 - Wat gebeurt er als je `setAlarm(true)` aanroept?
 - Wat gebeurt er als je `setAlarm(false)` aanroept?
-- Waarom gebruikt de functie `===` in plaats van `=`?
 
 #### Opdracht 5.5
 
@@ -338,16 +335,11 @@ forever(function () {
    - Welke bouwstenen herken je?
    - Schrijf pseudocode
 
-2. "Tel hoeveel keer knop A is ingedrukt en toon dit met LED's"
-
+2. "Laat een LED rondjes maken, sneller als de temperatuur hoger is"
    - Welke bouwstenen herken je?
    - Schrijf pseudocode
 
-3. "Laat een LED rondjes maken, sneller als de temperatuur hoger is"
-   - Welke bouwstenen herken je?
-   - Schrijf pseudocode
-
-## Mini-case: Alarmsysteem
+#### Opdracht 5.7: Alarmsysteem (mini-case)
 
 **Probleem**: Maak een alarmsysteem, dat reageert op beweging. Wanneer je op knop A drukt, gaat het alarm aan (rode
 knipperende LED's + geluid). Wanneer je op knop B drukt, gaat het alarm uit.
@@ -393,35 +385,7 @@ Gebruik functies met parameters waar mogelijk.
 - Test of knop B het alarm uitzet
 - Test of het alarm blijft werken na meerdere keren aan/uit
 
-#### Opdracht 5.7: Basis functies met parameters
-
-- Maak globale variabelen: `firstName` (jouw voornaam), `className` (jouw klas), `number1` (waarde 12), `number2`
-  (waarde 8)
-- Schrijf een functie `greetStudent` die een naam en klas als parameters heeft
-- De functie toont: `"Hallo Alex uit klas 1A"`
-- Schrijf een functie `calculateSum` die twee getallen als parameters heeft
-- Deze functie toont de som van beide getallen met een template string
-- Test beide functies met je globale variabelen
-
-#### Opdracht 5.8: LED patronen
-
-- Maak globale variabelen: `favoriteColor` (een kleur), `blinkCount` (waarde 3)
-- Schrijf een functie `fillLeds` die een kleur als parameter heeft
-- De functie zet alle LED's op die kleur
-- Schrijf een functie `blinkPattern` die een kleur en aantal keren als parameters heeft
-- Deze functie laat alle LED's het opgegeven aantal keer knipperen
-- Test met je globale variabelen en andere waarden
-
-#### Opdracht 5.9: Geluid en licht
-
-- Maak globale variabelen voor verschillende toonhoogtes
-- Schrijf een functie `ledAndSound` die een LED-positie, kleur en toonhoogte als parameters heeft
-- De functie zet de LED aan en speelt tegelijk een toon af
-- Schrijf een functie `playSequence` die 3 verschillende LED's na elkaar laat oplichten
-- Elke LED heeft een andere kleur en speelt een andere toon
-- Test je functies met verschillende combinaties
-
-#### Opdracht 5.10: Code lezen
+#### Opdracht 5.8: Code lezen
 
 Bekijk deze code en beantwoord de vragen:
 
@@ -449,7 +413,7 @@ Vragen:
 - Wat gebeurt er als je `checkBonus()` aanroept terwijl `gameScore` 45 is?
 - Wat gebeurt er als je `checkBonus()` aanroept terwijl `gameScore` 60 is?
 
-#### Opdracht 5.11: Mini-case uitwerken
+#### Opdracht 5.9: Mini-case uitwerken
 
 Kies één van deze problemen en werk het volledig uit volgens het stappenplan:
 
