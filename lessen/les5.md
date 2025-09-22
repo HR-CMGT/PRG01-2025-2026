@@ -192,7 +192,7 @@ let alarmActive = false;
 
 function setAlarm(isActive: boolean) {
   alarmActive = isActive;
-  if (alarmActive === true) {
+  if (alarmActive) {
     light.setAll(Colors.Red);
     music.playTone(800, 500);
   } else {
