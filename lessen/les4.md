@@ -26,7 +26,7 @@ Voorbeeld:
 let age = 20;
 let hasLicense = true;
 
-if (age >= 18 && hasLicense === true) {
+if (age >= 18 && hasLicense) {
   console.log("Je mag autorijden!");
 }
 ```
@@ -42,8 +42,22 @@ Voorbeeld:
 let isWeekend = false;
 let isVacation = true;
 
-if (isWeekend === true || isVacation === true) {
+if (isWeekend || isVacation) {
   console.log("Je hoeft niet naar school!");
+}
+```
+
+### NOT operator (!)
+
+De `!` operator betekent "NIET". Hiermee kun je testen of iets niet waar is (oftewel: onwaar).
+
+Voorbeeld:
+
+```typescript
+let raining = false;
+
+if (!raining) {
+  console.log("Het regent niet, je kunt naar buiten!");
 }
 ```
 
