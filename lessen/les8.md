@@ -72,7 +72,7 @@ Voeg een powerpil toe:
 - Als de powerpill actief is, en het spook raakt pacman, dan krijg je 10 punten. Daarna is de powerpill uitgewerkt. Het
   spook spawnt 5 stappen voor Pacman.
 
-### Case 2: Simon Says
+### Case 2: Simon
 
 Maak een spel om je geheugen te trainen. Bij dit spel gebruik je de linker helft van de ring om groen te laten zien en
 de rechter voor rood.
@@ -87,7 +87,7 @@ de rechter voor rood.
 - Steeds als de gebruiker de kleuren correct nadoet komt er één willekeurige kleur bij
 - Als de gebruiker het fout doet begint het spel opnieuw
 
-[Simon](https://www.youtube.com/watch?v=1Yqj76Q4jJ4)
+[Hoe werkt Simon?](https://www.youtube.com/watch?v=1Yqj76Q4jJ4)
 
 - Schrijf verzorgde code en gebruik functies om je code te structureren
 - Werk alle stappen uit
