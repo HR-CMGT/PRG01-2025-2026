@@ -56,7 +56,12 @@ console.log(myArray.length); // 3
 - Toon de eerste en laatste waarde in de console
 - Voeg het getal 9 toe aan de array
 - Toon de lengte van de array
-- Gebruik de lengte om de laatste waarde uit de array te tonen
+
+```typescript
+console.log(ledPositions[...]);
+```
+
+- Gebruik op de plek van ... de `ledPositions.length` om de laatste waarde uit de array te tonen
 
 ## Arrays en for-loops
 
