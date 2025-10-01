@@ -64,7 +64,7 @@ nummer ervoor.
 
 #### STAP 7: Hoogste Score
 
-Toon apart wat de hoogste score tot nu was. Gebruik hiervoor de lijst en geen aparte variabele.
+Toon apart wat de hoogste score tot nu was. Gebruik de lijst om deze highscore te vinden!
 
 #### STAP 8: Versnellend Spook
 
