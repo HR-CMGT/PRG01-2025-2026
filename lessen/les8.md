@@ -133,7 +133,7 @@ Als de speler op de laatste positie is, en het is goed gaan we naar de volgende 
 
 #### Extra Uitdagingen (optioneel):
 
-- **Vier kleuren (expert):** Gebruik niet twee kleuren en knoppen A en B, maar gebruik vier kleuren en touch pins A0,
-  A3, A4 en A7
+- **Vier kleuren (expert):** Gebruik niet twee kleuren en knoppen A en B, maar gebruik vier kleuren en touch pins A2,
+  A5, A6 en A7
 - **Geluid:** Voeg verschillende tonen toe om de gebruiker te helpen de reeks te onthouden
 - **Feedback:** Geef feedback in de vorm van animaties/geluid bij game over
