@@ -25,6 +25,8 @@ geen gangen, alleen jij en een spook.
 
 [Voorbeeld: Pacman IKEA lamp, gemaakt met adafruit led strip](https://www.youtube.com/watch?v=uA1B6-CTotE)
 
+<br><bR><br>
+
 #### STAP 1: Het Spook
 
 We beginnen met een spook. Het spook is een oranje led, dat continu rondjes tegen de klok in draait op de led-ring. Hij
@@ -73,6 +75,10 @@ Voeg een powerpil toe:
 - Zo lang de powerpill actief is, teken je het spookje blauw.
 - Als de powerpill actief is, en het spook raakt pacman, dan krijg je 10 punten. Daarna is de powerpill uitgewerkt. Het
   spook spawnt 5 stappen voor Pacman.
+
+
+<br><bR><br>
+
 
 ### Case 2: Simon
 
