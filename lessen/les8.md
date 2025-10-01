@@ -28,9 +28,8 @@ geen gangen, alleen jij en een spook.
 - Werk alle stappen uit
 - Test elke stap voordat je naar de volgende gaat
 
-[Voorbeeld: Pacman IKEA lamp, gemaakt met adafruit led strip](https://www.youtube.com/watch?v=uA1B6-CTotE)
+[Voorbeeld: Pacman IKEA lamp](https://www.youtube.com/watch?v=uA1B6-CTotE), gemaakt met externe [adafruit ledstrip](https://www.adafruit.com/product/1138?)
 
-<br><bR><br>
 
 #### STAP 1: Het Spook
 
