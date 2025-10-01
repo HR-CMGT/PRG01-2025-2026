@@ -14,6 +14,11 @@
 
 ## Opdrachten
 
+- Pacman
+- Simon
+
+<br><bR><br>
+
 ### Case 1: Pacman
 
 In deze opdracht ga je de Circuit Playground Express programmeren voor een eenvoudige versie van Pacman. Geen doolhof,
